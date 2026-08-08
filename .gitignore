@@ -1,0 +1,12 @@
+# Source quote documents — contain personal contact details, keep out of the public repo
+*.pdf
+*.docx
+
+# macOS
+.DS_Store
+
+# Local working notes (not published)
+NOTES.md
+
+# image sourcing working files
+images/*.json
