@@ -150,6 +150,7 @@ td.rowlab{color:var(--ink-3);font-size:.76rem;letter-spacing:.09em;text-transfor
 .tab:hover{color:var(--ink);border-color:var(--gold-dim)}
 .tab[aria-selected="true"]{background:var(--gold);border-color:var(--gold);color:#1a1206;font-weight:600}
 .panel[hidden]{display:none}
+.opanel[hidden]{display:none}
 
 /* ---------- destination header ---------- */
 .dest-head{
@@ -298,7 +299,7 @@ footer p{margin:0 0 8px;max-width:75ch}
       <div class="hero-stat"><b>12</b><span>Golf courses</span></div>
       <div class="hero-stat"><b>$2,072</b><span>Lowest / person</span></div>
       <div class="hero-stat"><b>$2,869</b><span>Highest / person</span></div>
-      <div class="hero-stat"><b>YYC</b><span>Departure</span></div>
+      <div class="hero-stat"><b>3</b><span>Departure cities</span></div>
     </div>
 
     <div class="gallery" style="margin-top:34px">
@@ -539,12 +540,166 @@ footer p{margin:0 0 8px;max-width:75ch}
 <!-- =================== FLIGHTS =================== -->
 <section id="flights">
   <div class="wrap">
-    <h2><span class="num">03 — Getting there</span>Nonstop from Calgary</h2>
+    <h2><span class="num">03 — Getting there</span>Nonstop from Calgary, Toronto &amp; Houston</h2>
     <p class="sub">
-      You asked for nonstop, and the good news is all four destinations have one from YYC in February.
-      The bad news is that two of them hang on a single WestJet route with limited frequency — and the
-      Tuesday arrival / Sunday departure the quotes assume may not line up with the days those routes fly.
+      All four destinations have a nonstop from all three cities in February — but the three groups will
+      have wildly different travel days. Calgary is the constrained one: two of its four routes hang on a
+      single WestJet flight with limited frequency, and the Tuesday arrival the quotes assume may not line
+      up. Houston golfers, by contrast, fly roughly half as long and pay roughly half as much.
     </p>
+
+    <div class="alert green">
+      <span class="ico">🌎</span>
+      <div>
+        <b>Three things that only show up once you add Toronto and Houston.</b>
+        <p>
+          <b>1.</b> Toronto can fly <b>nonstop into La Romana (LRM)</b> — the airport <em>inside</em> Casa
+          de Campo, ten minutes from your room. That removes the two-hour van transfer that is the biggest
+          strike against the Dominican option, but only for the Toronto contingent.
+          <b>2.</b> February is the <em>most expensive</em> month of the year out of both Canadian cities and
+          one of the <em>cheapest</em> out of Houston — Texans aren't fleeing winter, so they're not bidding
+          the fares up. <b>3.</b> Houston's flight times are in a different class: 2h20m to Cancún and
+          3h34m to Liberia, against 5h20m and 6h50m from Calgary.
+        </p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:34px">Pick a departure city</h3>
+    <div class="tabs" role="tablist" style="margin-bottom:20px">
+      <button class="tab otab" role="tab" aria-selected="true" data-panel="o-yyc">Calgary (YYC)</button>
+      <button class="tab otab" role="tab" aria-selected="false" data-panel="o-yyz">Toronto (YYZ)</button>
+      <button class="tab otab" role="tab" aria-selected="false" data-panel="o-iah">Houston (IAH/HOU)</button>
+    </div>
+
+    <div class="opanel" id="o-yyc" role="tabpanel">
+      <div class="tscroll">
+        <table>
+          <thead><tr><th>To</th><th style="text-align:right">Feb avg</th><th style="text-align:right">Time</th><th style="text-align:right">Weekly</th><th>Carriers</th></tr></thead>
+          <tbody>
+            <tr><td><b>Liberia</b> LIR <span class="tiny">Costa Rica</span></td><td style="text-align:right"><span class="price best">C$703</span></td><td style="text-align:right">6h50m</td><td style="text-align:right">~5</td><td>WestJet <span class="pill a">1 carrier</span></td></tr>
+            <tr><td><b>Cancún</b> CUN</td><td style="text-align:right"><span class="price">C$828</span></td><td style="text-align:right">5h20m</td><td style="text-align:right">~7</td><td>WestJet, Air Canada, Flair <span class="pill g">3</span></td></tr>
+            <tr><td><b>Puerto Vallarta</b> PVR</td><td style="text-align:right"><span class="price">C$897</span></td><td style="text-align:right">4h50m</td><td style="text-align:right">~6</td><td>WestJet, Air Canada, Flair <span class="pill g">3</span></td></tr>
+            <tr><td><b>Punta Cana</b> PUJ <span class="tiny">+ 2h drive to Casa de Campo</span></td><td style="text-align:right"><span class="price worst">C$1,538</span></td><td style="text-align:right">6h52m</td><td style="text-align:right">~3</td><td>WestJet <span class="pill r">1 carrier</span></td></tr>
+            <tr><td><b>La Romana</b> LRM <span class="tiny">the ideal DR airport</span></td><td style="text-align:right" class="worst">no nonstop</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td class="tiny">Toronto and Montreal only</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--ink-2);font-size:.93rem;margin-top:14px">
+        <b>The constrained origin.</b> Cancún and Puerto Vallarta are comfortable — three carriers, near-daily
+        departures, real redundancy if someone misses a flight. Liberia and Punta Cana are single-carrier
+        WestJet routes, both frequently overnight departures, and both need their Tuesday service confirmed
+        before deposits. Costa Rica is the cheapest flight of the four from here, which is the opposite of
+        what most people assume.
+      </p>
+    </div>
+
+    <div class="opanel" id="o-yyz" role="tabpanel" hidden>
+      <div class="tscroll">
+        <table>
+          <thead><tr><th>To</th><th style="text-align:right">Feb avg</th><th style="text-align:right">Time</th><th style="text-align:right">Weekly</th><th>Carriers</th></tr></thead>
+          <tbody>
+            <tr><td><b>Punta Cana</b> PUJ</td><td style="text-align:right"><span class="price best">C$663</span></td><td style="text-align:right">~4h30m</td><td style="text-align:right">many</td><td>Air Canada, Transat, Arajet, Flair, WestJet <span class="pill g">5</span></td></tr>
+            <tr><td><b>Liberia</b> LIR <span class="tiny">Costa Rica</span></td><td style="text-align:right"><span class="price">~C$680</span></td><td style="text-align:right">5h15–5h45</td><td style="text-align:right">10</td><td>WestJet, Porter, Transat, Air Canada <span class="pill g">4</span></td></tr>
+            <tr><td><b>Puerto Vallarta</b> PVR</td><td style="text-align:right"><span class="price">~C$725</span></td><td style="text-align:right">~5h20m</td><td style="text-align:right">19</td><td>Air Canada, Transat, Flair, Porter, WestJet <span class="pill g">5</span></td></tr>
+            <tr><td><b>Cancún</b> CUN</td><td style="text-align:right"><span class="price">C$736</span></td><td style="text-align:right">4h00m</td><td style="text-align:right">44</td><td>Air Canada, Transat, Flair, Porter, WestJet <span class="pill g">5</span></td></tr>
+            <tr><td><b>La Romana</b> LRM <span class="tiny">10 min from Casa de Campo</span></td><td style="text-align:right"><span class="price">~C$750</span></td><td style="text-align:right">4h25m</td><td style="text-align:right">seasonal</td><td>WestJet, Nov–Apr <span class="pill b">the smart routing</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--ink-2);font-size:.93rem;margin-top:14px">
+        <b>The easy origin.</b> Toronto has more carriers, more frequency and lower fares than Calgary to
+        every single destination — 44 weekly flights to Cancún alone. And it is the only one of the three
+        cities that can fly <b>straight into Casa de Campo's own airport</b>: WestJet runs YYZ–LRM seasonally
+        from November through April on a 737 MAX 8, 4h25m, landing ten minutes from the resort gate. If a
+        meaningful share of the group is coming from Toronto, the Dominican option gets substantially more
+        attractive than the Calgary-only view suggests.
+      </p>
+    </div>
+
+    <div class="opanel" id="o-iah" role="tabpanel" hidden>
+      <div class="tscroll">
+        <table>
+          <thead><tr><th>To</th><th style="text-align:right">Feb avg</th><th style="text-align:right">Time</th><th style="text-align:right">Weekly</th><th>Carriers</th></tr></thead>
+          <tbody>
+            <tr><td><b>Puerto Vallarta</b> PVR</td><td style="text-align:right"><span class="price best">~$290</span></td><td style="text-align:right">~3h00m</td><td style="text-align:right">19</td><td>United (IAH), Southwest (HOU) <span class="pill g">2</span></td></tr>
+            <tr><td><b>Cancún</b> CUN</td><td style="text-align:right"><span class="price best">$338</span></td><td style="text-align:right">2h20m</td><td style="text-align:right">100+</td><td>United 6×/day (IAH), Southwest 3×/day (HOU) <span class="pill g">2</span></td></tr>
+            <tr><td><b>Liberia</b> LIR <span class="tiny">Costa Rica</span></td><td style="text-align:right"><span class="price">~$420</span></td><td style="text-align:right">3h34m</td><td style="text-align:right">12</td><td>United, ~2×/day <span class="pill a">1 carrier</span></td></tr>
+            <tr><td><b>Punta Cana</b> PUJ <span class="tiny">+ 2h drive to Casa de Campo</span></td><td style="text-align:right"><span class="price">~$480</span></td><td style="text-align:right">4h19m</td><td style="text-align:right">7–14</td><td>United, 1–2×/day <span class="pill a">1 carrier</span></td></tr>
+            <tr><td><b>La Romana</b> LRM</td><td style="text-align:right" class="worst">no nonstop</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td class="tiny">connect, or fly PUJ</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--ink-2);font-size:.93rem;margin-top:14px">
+        <b>The easy origin, for different reasons.</b> Houston is a United hub with Southwest at Hobby as a
+        second option, and February is one of the <em>cheapest</em> months of the year out of Texas rather
+        than the most expensive — no winter-escape premium. Cancún is 2h20m and roughly a hundred weekly
+        departures across the two airports. Even Liberia, the long one, is 3h34m. Whatever the group
+        chooses, the Houston contingent has the shortest day and the smallest bill.
+        <span class="tiny" style="display:block;margin-top:8px">Note: IAH and HOU are different airports
+        ~45 min apart. United flies from IAH, Southwest from Hobby — worth coordinating so the group isn't split.</span>
+      </p>
+    </div>
+
+    <h3>Same trip, three very different travel days</h3>
+    <div class="tscroll">
+      <table>
+        <thead>
+          <tr><th>Destination</th><th style="text-align:right">Calgary</th><th style="text-align:right">Toronto</th><th style="text-align:right">Houston</th><th>Who has it easiest</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Cancún</b></td>
+            <td style="text-align:right">C$828 · 5h20m</td>
+            <td style="text-align:right">C$736 · 4h00m</td>
+            <td style="text-align:right" class="best">$338 · 2h20m</td>
+            <td class="tiny">Houston, by a mile — but everyone is fine</td>
+          </tr>
+          <tr>
+            <td><b>Puerto Vallarta</b></td>
+            <td style="text-align:right">C$897 · 4h50m</td>
+            <td style="text-align:right">~C$725 · 5h20m</td>
+            <td style="text-align:right" class="best">~$290 · 3h00m</td>
+            <td class="tiny">Houston; Calgary's shortest flight of the four</td>
+          </tr>
+          <tr>
+            <td><b>Dominican Rep.</b></td>
+            <td style="text-align:right" class="worst">C$1,538 · 6h52m<span class="tiny">+2h drive</span></td>
+            <td style="text-align:right" class="best">~C$750 · 4h25m<span class="tiny">lands at the resort</span></td>
+            <td style="text-align:right">~$480 · 4h19m<span class="tiny">+2h drive</span></td>
+            <td class="tiny">Toronto — only city with the LRM nonstop</td>
+          </tr>
+          <tr>
+            <td><b>Costa Rica</b></td>
+            <td style="text-align:right">C$703 · 6h50m</td>
+            <td style="text-align:right">~C$680 · 5h30m</td>
+            <td style="text-align:right" class="best">~$420 · 3h34m</td>
+            <td class="tiny">Houston; Calgary's cheapest of the four</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:.82rem;color:var(--ink-3);margin:12px 0 22px">
+      Calgary and Toronto in CAD, Houston in USD — each city's home currency. Figures marked "~" are
+      estimates interpolated from route averages where a February-specific number wasn't published;
+      the rest are published February averages as of Aug 2026.
+    </p>
+
+    <div class="alert amber">
+      <span class="ico">🧭</span>
+      <div>
+        <b>If the group is genuinely split across three cities, this reshuffles the ranking.</b>
+        <p>
+          The Calgary-only view makes the Dominican Republic look expensive and awkward — a C$1,538 red-eye
+          plus a two-hour drive. Add Toronto golfers landing at LRM for around C$750 and Houston golfers at
+          4h19m, and Casa de Campo stops being the logistically painful choice for most of the group. It's
+          still the priciest package by a wide margin, but the <em>travel</em> objection largely applies to
+          Calgary alone. Worth knowing before you let flight hassle veto the best golf.
+        </p>
+      </div>
+    </div>
+
+    <h3>The old Calgary detail</h3>
+    <p class="sub" style="margin-bottom:22px">Kept below for the Calgary contingent, who have the tightest constraints.</p>
 
     <div class="grid g2">
       <div class="card hi">
@@ -1431,13 +1586,21 @@ footer p{margin:0 0 8px;max-width:75ch}
         <div>
           <label for="pkg">Package</label>
           <select id="pkg">
-            <option value="cun|2259|828|0">Cancún — Riu Palace México, Jr Suite</option>
-            <option value="cun|2559|828|0">Cancún — Elite Club upgrade</option>
-            <option value="pvr|2389|897|0">Puerto Vallarta — Riu Pacífico, partial sea view</option>
-            <option value="pvr|2859|897|0">Puerto Vallarta — Ocean View Elite Club</option>
-            <option value="dr|2869|1538|200">Dominican Republic — Casa de Campo</option>
-            <option value="cr|2072|703|0">Costa Rica — Tamarindo Diria</option>
-            <option value="cr|2816|703|0">Costa Rica — Westin Reserva Conchal</option>
+            <option value="cun|2259|0">Cancún — Riu Palace México, Jr Suite</option>
+            <option value="cun|2559|0">Cancún — Elite Club upgrade</option>
+            <option value="pvr|2389|0">Puerto Vallarta — Riu Pacífico, partial sea view</option>
+            <option value="pvr|2859|0">Puerto Vallarta — Ocean View Elite Club</option>
+            <option value="dr|2869|200">Dominican Republic — Casa de Campo</option>
+            <option value="cr|2072|0">Costa Rica — Tamarindo Diria</option>
+            <option value="cr|2816|0">Costa Rica — Westin Reserva Conchal</option>
+          </select>
+        </div>
+        <div>
+          <label for="org">Flying from</label>
+          <select id="org">
+            <option value="yyc">Calgary (YYC)</option>
+            <option value="yyz">Toronto (YYZ)</option>
+            <option value="iah">Houston (IAH/HOU)</option>
           </select>
         </div>
         <div>
@@ -1466,9 +1629,11 @@ footer p{margin:0 0 8px;max-width:75ch}
         </table>
       </div>
       <p style="font-size:.82rem;color:var(--ink-3);margin:14px 0 0">
-        Flights use the <b>published February averages in CAD</b> from the table above, converted at
-        <b>1 USD = 1.4016 CAD</b> (Aug 7, 2026). Package prices are USD as quoted. February is the peak month
-        on all four routes — these are planning numbers, and a well-timed booking will beat them.
+        Flights use the <b>February averages for the departure city you select</b> — Calgary and Toronto in
+        CAD, Houston in USD — converted at <b>1 USD = 1.4016 CAD</b> (Aug 7, 2026). Package prices are USD as
+        quoted. Toronto's Dominican figure uses the <b>La Romana</b> nonstop; Calgary and Houston use Punta
+        Cana plus the drive. February is peak season from both Canadian cities and off-peak from Houston, so
+        these are planning numbers rather than the fare you'll be quoted.
       </p>
     </div>
 
@@ -1652,10 +1817,13 @@ footer p{margin:0 0 8px;max-width:75ch}
     <div class="rank">
       <div class="n">06</div>
       <div>
-        <h3>Then move fast on flights</h3>
-        <p>February is peak season out of Calgary, and 12–16 seats on the same aircraft is not a small ask.
-        Once the destination is settled, book the air before the land deposit clears — the flight is the
-        constraint, not the hotel.</p>
+        <h3>Then move fast on flights — and count the cities first</h3>
+        <p>February is peak season out of both Calgary and Toronto (though not Houston), and 12–16 seats on
+        the same aircraft is not a small ask. Get a head count <b>by departure city</b> before you decide:
+        if a real share is coming from Toronto, the Dominican Republic's biggest drawback disappears —
+        they land at La Romana, ten minutes from the resort, and the premium over Cancún drops from about
+        C$1,845 a head (Calgary) to roughly C$1,150. Once the destination is settled, book the air before
+        the land deposit clears; the flight is the constraint, not the hotel.</p>
       </div>
     </div>
   </div>
@@ -1676,17 +1844,27 @@ footer p{margin:0 0 8px;max-width:75ch}
     served from <code>images/</code> and credited below. No course or resort photography is reproduced here —
     for those, use the "Official site &amp; photos" links on each course and hotel above.</p>
     <p style="font-size:.78rem;line-height:1.75;margin-top:10px"><a href="https://commons.wikimedia.org/wiki/File:Ruins_of_Tulum,_QR.jpg" target="_blank" rel="noopener">Tulum</a> — Erik Cleves Kristensen, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa-del-carmen-beach.jpg" target="_blank" rel="noopener">Playa del Carmen</a> — Scott S Bateman, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Palancar_reef.jpg" target="_blank" rel="noopener">Palancar Reef</a> — Johnnie Flashlite, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Chichen_Itza_1.jpg" target="_blank" rel="noopener">Chichén Itzá</a> — Daniel Schwen, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Mayakoba_-_panoramio.jpg" target="_blank" rel="noopener">Mayakoba</a> — Alfonzo Buscemi, CC BY 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Malec%C3%B3n,_Puerto_Vallarta,_February_2023.jpg" target="_blank" rel="noopener">PV Malecón</a> — Another Believer, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Puerto_Vallarta_-_humpback_whale.jpg" target="_blank" rel="noopener">Humpback whale</a> — TerryDOtt, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Las_Marietas_Island,_Mexico.jpg" target="_blank" rel="noopener">Islas Marietas</a> — Unknown, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Nuevo_Vallarta_atardecer.jpg" target="_blank" rel="noopener">Nuevo Vallarta</a> — Netzaa, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Altos_de_Chavon_1.jpg" target="_blank" rel="noopener">Altos de Chavón</a> — Andreas Volkmer, Public domain · <a href="https://commons.wikimedia.org/wiki/File:Beach_in_Casa_De_Campo,_Dominican_Republic_(51908230116).jpg" target="_blank" rel="noopener">Casa de Campo beach</a> — Sergiy Galyonkin from Raleigh, USA, CC BY-SA 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Marina_in_Casa_De_Campo,_Dominican_Republic_(51907257727).jpg" target="_blank" rel="noopener">Casa de Campo marina</a> — Sergiy Galyonkin from Raleigh, USA, CC BY-SA 2.0 · <a href="https://commons.wikimedia.org/wiki/File:2023_-_Saona_Island_-_24.jpg" target="_blank" rel="noopener">Saona Island</a> — Oleg Yunakov, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa_Conchal_sand.jpg" target="_blank" rel="noopener">Playa Conchal</a> — Haakon S. Krohn, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Tamarindo_beach-Guanacaste-Costa_Rica.jpg" target="_blank" rel="noopener">Tamarindo</a> — Jarle Naustvik, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Rincon_de_la_Vieja.JPG" target="_blank" rel="noopener">Rincón de la Vieja</a> — Kobold66, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa_Flamingo.jpg" target="_blank" rel="noopener">Playa Flamingo</a> — Haakon S. Krohn, CC BY-SA 3.0</p>
-    <p style="margin-top:20px;color:var(--ink-3)">Prepared for the February 2027 golf trip · Calgary departure ·
+    <p style="margin-top:20px;color:var(--ink-3)">Prepared for the February 2027 golf trip · Calgary, Toronto &amp; Houston ·
     last updated August 2026</p>
   </div>
 </footer>
 
 <script>
-// ---- tabs ----
-document.querySelectorAll('.tab').forEach(function(btn){
+// ---- destination tabs ----
+document.querySelectorAll('.tab:not(.otab)').forEach(function(btn){
   btn.addEventListener('click', function(){
-    document.querySelectorAll('.tab').forEach(function(b){ b.setAttribute('aria-selected','false'); });
+    document.querySelectorAll('.tab:not(.otab)').forEach(function(b){ b.setAttribute('aria-selected','false'); });
     document.querySelectorAll('.panel').forEach(function(p){ p.hidden = true; });
+    btn.setAttribute('aria-selected','true');
+    document.getElementById(btn.dataset.panel).hidden = false;
+  });
+});
+
+// ---- departure-city tabs ----
+document.querySelectorAll('.otab').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.otab').forEach(function(b){ b.setAttribute('aria-selected','false'); });
+    document.querySelectorAll('.opanel').forEach(function(p){ p.hidden = true; });
     btn.setAttribute('aria-selected','true');
     document.getElementById(btn.dataset.panel).hidden = false;
   });
@@ -1694,6 +1872,7 @@ document.querySelectorAll('.tab').forEach(function(btn){
 
 // ---- cost calculator ----
 var pkg = document.getElementById('pkg'),
+    org = document.getElementById('org'),
     grp = document.getElementById('grp'),
     spend = document.getElementById('spend'),
     cad = document.getElementById('cad'),
@@ -1704,13 +1883,25 @@ var pkg = document.getElementById('pkg'),
 
 var NIGHTS = 5, CHARTER = 1600, FX = 1.4016;
 
+// February average return fares. Canadian origins quoted in CAD, Houston in USD.
+// `note` flags the airport actually used where it differs from the obvious one.
+var FARES = {
+  yyc: {label:'YYC', cur:'CAD', cun:828, pvr:897, dr:1538, cr:703, drNote:'via PUJ, +2h drive'},
+  yyz: {label:'YYZ', cur:'CAD', cun:736, pvr:725, dr:750,  cr:680, drNote:'via LRM, 10 min away'},
+  iah: {label:'IAH', cur:'USD', cun:338, pvr:290, dr:480,  cr:420, drNote:'via PUJ, +2h drive'}
+};
+
 function render(){
   var parts = pkg.value.split('|');
+  var dest   = parts[0];                        // cun | pvr | dr | cr
   var land   = parseFloat(parts[1]);            // USD, as quoted
-  var flightCad = parseFloat(parts[2]);         // CAD, Feb average
-  var caddie = parseFloat(parts[3]);            // USD
+  var caddie = parseFloat(parts[2]);            // USD
   var n = parseInt(grp.value, 10);
   var perDay = parseFloat(spend.value);
+
+  var o = FARES[org.value];
+  var fareNative = o[dest];                     // in that origin's home currency
+  var flight = o.cur === 'CAD' ? fareNative / FX : fareNative;   // normalise to USD
 
   var toCad = ccad.checked;
   var cur = toCad ? 'CAD' : 'USD';
@@ -1718,11 +1909,14 @@ function render(){
     return (toCad ? 'C$' : '$') + Math.round(toCad ? usd * FX : usd).toLocaleString('en-US');
   }
 
-  var flight = flightCad / FX;                  // normalise to USD internally
+  var sym = o.cur === 'CAD' ? 'C$' : '$';
+  var fareLabel = 'Return airfare from ' + o.label + ' &mdash; Feb avg (' +
+                  sym + fareNative.toLocaleString('en-US') + ')' +
+                  (dest === 'dr' ? ' <span style="color:var(--ink-3)">' + o.drNote + '</span>' : '');
 
   var rows = [
     ['Land package (quoted)', land],
-    ['Return airfare from YYC &mdash; Feb avg (C$' + flightCad.toLocaleString('en-US') + ')', flight]
+    [fareLabel, flight]
   ];
   if (cad.checked && caddie > 0) rows.push(['Caddie fees &amp; tips (required)', caddie]);
   if (chart.checked) rows.push(['Group charter, split ' + n + ' ways', CHARTER / n]);
@@ -1746,7 +1940,7 @@ function render(){
   document.getElementById('spendOut').textContent = '$' + perDay;
 }
 
-[pkg, grp, spend, cad, chart, ins, ccad].forEach(function(el){
+[pkg, org, grp, spend, cad, chart, ins, ccad].forEach(function(el){
   el.addEventListener('input', render);
   el.addEventListener('change', render);
 });
