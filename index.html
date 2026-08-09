@@ -256,6 +256,25 @@ figure{margin:0}
 .lnk::after{content:"↗";font-size:.72rem;opacity:.6}
 .lnk.primary{background:rgba(217,178,95,.12);border-color:var(--gold-dim);color:var(--gold)}
 
+/* ---------- view counter ---------- */
+.counter{
+  display:inline-flex;align-items:center;gap:9px;margin-top:22px;
+  background:var(--panel);border:1px solid var(--line);border-radius:99px;
+  padding:7px 15px 7px 13px;font-size:.8rem;color:var(--ink-3);
+}
+.counter[hidden]{display:none}
+.counter b{color:var(--gold);font-family:var(--mono);font-size:.86rem;letter-spacing:.02em}
+.counter .pulse{
+  width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;
+  box-shadow:0 0 0 0 rgba(78,168,122,.6);animation:pulse 2.4s ease-out infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(78,168,122,.55)}
+  70%{box-shadow:0 0 0 7px rgba(78,168,122,0)}
+  100%{box-shadow:0 0 0 0 rgba(78,168,122,0)}
+}
+@media (prefers-reduced-motion:reduce){ .counter .pulse{animation:none} }
+
 footer{padding:44px 0 60px;color:var(--ink-3);font-size:.85rem}
 footer p{margin:0 0 8px;max-width:75ch}
 
@@ -1846,6 +1865,11 @@ footer p{margin:0 0 8px;max-width:75ch}
     <p style="font-size:.78rem;line-height:1.75;margin-top:10px"><a href="https://commons.wikimedia.org/wiki/File:Ruins_of_Tulum,_QR.jpg" target="_blank" rel="noopener">Tulum</a> — Erik Cleves Kristensen, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa-del-carmen-beach.jpg" target="_blank" rel="noopener">Playa del Carmen</a> — Scott S Bateman, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Palancar_reef.jpg" target="_blank" rel="noopener">Palancar Reef</a> — Johnnie Flashlite, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Chichen_Itza_1.jpg" target="_blank" rel="noopener">Chichén Itzá</a> — Daniel Schwen, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Mayakoba_-_panoramio.jpg" target="_blank" rel="noopener">Mayakoba</a> — Alfonzo Buscemi, CC BY 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Malec%C3%B3n,_Puerto_Vallarta,_February_2023.jpg" target="_blank" rel="noopener">PV Malecón</a> — Another Believer, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Puerto_Vallarta_-_humpback_whale.jpg" target="_blank" rel="noopener">Humpback whale</a> — TerryDOtt, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Las_Marietas_Island,_Mexico.jpg" target="_blank" rel="noopener">Islas Marietas</a> — Unknown, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Nuevo_Vallarta_atardecer.jpg" target="_blank" rel="noopener">Nuevo Vallarta</a> — Netzaa, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Altos_de_Chavon_1.jpg" target="_blank" rel="noopener">Altos de Chavón</a> — Andreas Volkmer, Public domain · <a href="https://commons.wikimedia.org/wiki/File:Beach_in_Casa_De_Campo,_Dominican_Republic_(51908230116).jpg" target="_blank" rel="noopener">Casa de Campo beach</a> — Sergiy Galyonkin from Raleigh, USA, CC BY-SA 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Marina_in_Casa_De_Campo,_Dominican_Republic_(51907257727).jpg" target="_blank" rel="noopener">Casa de Campo marina</a> — Sergiy Galyonkin from Raleigh, USA, CC BY-SA 2.0 · <a href="https://commons.wikimedia.org/wiki/File:2023_-_Saona_Island_-_24.jpg" target="_blank" rel="noopener">Saona Island</a> — Oleg Yunakov, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa_Conchal_sand.jpg" target="_blank" rel="noopener">Playa Conchal</a> — Haakon S. Krohn, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Tamarindo_beach-Guanacaste-Costa_Rica.jpg" target="_blank" rel="noopener">Tamarindo</a> — Jarle Naustvik, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Rincon_de_la_Vieja.JPG" target="_blank" rel="noopener">Rincón de la Vieja</a> — Kobold66, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa_Flamingo.jpg" target="_blank" rel="noopener">Playa Flamingo</a> — Haakon S. Krohn, CC BY-SA 3.0</p>
     <p style="margin-top:20px;color:var(--ink-3)">Prepared for the February 2027 golf trip · Calgary, Toronto &amp; Houston ·
     last updated August 2026</p>
+
+    <div class="counter" id="viewCounter" hidden>
+      <span class="pulse" aria-hidden="true"></span>
+      <span><b id="viewCount">—</b> page views</span>
+    </div>
   </div>
 </footer>
 
@@ -1945,6 +1969,48 @@ function render(){
   el.addEventListener('change', render);
 });
 render();
+
+// ---- page view counter ----
+// Free public counter (Abacus). No account, no cookies, no per-visitor data.
+// Counts once per browser session; refreshes just read the current total.
+// If it is blocked or the service is down the badge stays hidden — never shows an error.
+(function(){
+  var box = document.getElementById('viewCounter'),
+      out = document.getElementById('viewCount');
+  if (!box || !out || typeof fetch !== 'function') return;
+
+  var BASE = 'https://abacus.jasoncameron.dev/',
+      NS   = 'jasmah-golf-trip-27',
+      KEY  = 'site-views',
+      MARK = 'gt27-counted';
+
+  function seen(){ try { return sessionStorage.getItem(MARK) === '1'; } catch(e){ return false; } }
+  function mark(){ try { sessionStorage.setItem(MARK, '1'); } catch(e){} }
+
+  function show(n){
+    out.textContent = n.toLocaleString('en-US');
+    box.hidden = false;
+  }
+
+  function ask(verb){
+    return fetch(BASE + verb + '/' + NS + '/' + KEY, {cache:'no-store'})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(d){
+        if (typeof d.value !== 'number') throw new Error('bad payload');
+        return d.value;
+      });
+  }
+
+  if (seen()) {
+    // already counted this session — just read the total, and if the key
+    // somehow isn't there yet, fall back to counting.
+    ask('get').then(show).catch(function(){
+      ask('hit').then(function(n){ mark(); show(n); }).catch(function(){});
+    });
+  } else {
+    ask('hit').then(function(n){ mark(); show(n); }).catch(function(){});
+  }
+})();
 </script>
 
 </body>
