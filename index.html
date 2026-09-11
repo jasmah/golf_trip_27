@@ -3,2015 +3,249 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Golf Trip 2027 — Feb 23–28 | Four Finalists</title>
-<meta name="description" content="Side-by-side comparison of four golf trip quotes for Feb 23–28, 2027: Cancún, Puerto Vallarta, Casa de Campo (DR), and Guanacaste, Costa Rica.">
+<title>Riviera Maya Golf Trip — Feb 2027 — Group Review</title>
 <style>
-:root{
-  --bg:#0d1512;
-  --bg-2:#121d19;
-  --panel:#16241f;
-  --panel-2:#1b2c26;
-  --line:#274036;
-  --line-soft:#1f342c;
-  --ink:#eaf3ee;
-  --ink-2:#a9c1b6;
-  --ink-3:#7b968a;
-  --gold:#d9b25f;
-  --gold-dim:#9a7f43;
-  --green:#4ea87a;
-  --red:#e0685f;
-  --amber:#e0a95f;
-  --blue:#5f9fd9;
-  --radius:14px;
-  --max:1180px;
-  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
-  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{
-  margin:0;background:var(--bg);color:var(--ink);
-  font-family:var(--sans);font-size:16px;line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-img{max-width:100%}
-a{color:var(--gold);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-
-/* ---------- nav ---------- */
-nav{
-  position:sticky;top:0;z-index:50;
-  background:rgba(13,21,18,.92);backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line-soft);
-}
-nav .wrap{display:flex;align-items:center;gap:8px;height:56px;overflow-x:auto;scrollbar-width:none}
-nav .wrap::-webkit-scrollbar{display:none}
-nav .brand{font-family:var(--serif);font-weight:700;color:var(--gold);white-space:nowrap;margin-right:auto;font-size:1.02rem}
-nav a{
-  color:var(--ink-2);font-size:.83rem;letter-spacing:.04em;text-transform:uppercase;
-  padding:6px 11px;border-radius:99px;white-space:nowrap;
-}
-nav a:hover{color:var(--ink);background:var(--panel);text-decoration:none}
-
-/* ---------- hero ---------- */
-header.hero{
-  padding:64px 0 48px;
-  background:
-    radial-gradient(1100px 420px at 15% -10%, rgba(78,168,122,.16), transparent 60%),
-    radial-gradient(900px 400px at 88% 0%, rgba(217,178,95,.12), transparent 60%);
-  border-bottom:1px solid var(--line-soft);
-}
-.eyebrow{
-  font-family:var(--mono);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--gold);margin-bottom:18px;
-}
-h1{
-  font-family:var(--serif);font-size:clamp(2.3rem,6.2vw,4.1rem);line-height:1.03;
-  margin:0 0 18px;font-weight:700;letter-spacing:-.02em;
-}
-h1 em{font-style:normal;color:var(--gold)}
-.lede{font-size:clamp(1.02rem,2.1vw,1.2rem);color:var(--ink-2);max-width:62ch;margin:0 0 30px}
-.hero-stats{display:flex;flex-wrap:wrap;gap:12px}
-.hero-stat{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:14px 18px;min-width:132px;
-}
-.hero-stat b{display:block;font-family:var(--serif);font-size:1.55rem;color:var(--gold);line-height:1.15}
-.hero-stat span{font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
-
-/* ---------- sections ---------- */
-section{padding:60px 0;border-bottom:1px solid var(--line-soft)}
-h2{
-  font-family:var(--serif);font-size:clamp(1.65rem,3.6vw,2.35rem);
-  margin:0 0 10px;letter-spacing:-.01em;
-}
-h2 .num{font-family:var(--mono);font-size:.72rem;color:var(--gold);letter-spacing:.2em;display:block;margin-bottom:10px;text-transform:uppercase}
-.sub{color:var(--ink-2);max-width:70ch;margin:0 0 32px}
-h3{font-family:var(--serif);font-size:1.24rem;margin:30px 0 12px}
-h4{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:22px 0 9px;font-weight:600}
-
-/* ---------- alert ---------- */
-.alert{
-  border-radius:var(--radius);padding:18px 20px;margin:0 0 16px;
-  border:1px solid;display:flex;gap:14px;align-items:flex-start;
-}
-.alert .ico{font-size:1.2rem;line-height:1.35;flex-shrink:0}
-.alert.red{background:rgba(224,104,95,.08);border-color:rgba(224,104,95,.38)}
-.alert.amber{background:rgba(224,169,95,.08);border-color:rgba(224,169,95,.36)}
-.alert.green{background:rgba(78,168,122,.08);border-color:rgba(78,168,122,.36)}
-.alert b{display:block;margin-bottom:3px}
-.alert p{margin:0;color:var(--ink-2);font-size:.94rem}
-
-/* ---------- table ---------- */
-.tscroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
-table{border-collapse:collapse;width:100%;min-width:760px;font-size:.92rem}
-th,td{padding:13px 15px;text-align:left;border-bottom:1px solid var(--line-soft);vertical-align:top}
-thead th{
-  background:var(--panel-2);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--gold);font-weight:600;position:sticky;top:0;white-space:nowrap;
-}
-tbody tr:last-child td{border-bottom:none}
-tbody tr:hover{background:rgba(255,255,255,.022)}
-td.rowlab{color:var(--ink-3);font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap;font-weight:600}
-.price{font-family:var(--serif);font-size:1.12rem;color:var(--gold)}
-.tiny{font-size:.79rem;color:var(--ink-3);display:block;margin-top:2px}
-.best{color:var(--green);font-weight:600}
-.worst{color:var(--red)}
-.pill{
-  display:inline-block;padding:2px 9px;border-radius:99px;font-size:.7rem;
-  letter-spacing:.07em;text-transform:uppercase;font-weight:600;white-space:nowrap;
-}
-.pill.g{background:rgba(78,168,122,.16);color:#7fd0a4;border:1px solid rgba(78,168,122,.32)}
-.pill.a{background:rgba(224,169,95,.14);color:#f0c98d;border:1px solid rgba(224,169,95,.32)}
-.pill.r{background:rgba(224,104,95,.14);color:#f0958d;border:1px solid rgba(224,104,95,.32)}
-.pill.b{background:rgba(95,159,217,.14);color:#9fcbf0;border:1px solid rgba(95,159,217,.32)}
-
-/* ---------- cards ---------- */
-.grid{display:grid;gap:18px}
-.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-.g3{grid-template-columns:repeat(auto-fit,minmax(255px,1fr))}
-.g4{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
-.card{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
-}
-.card h3{margin-top:0}
-.card p:last-child{margin-bottom:0}
-.card.hi{border-color:var(--gold-dim);background:linear-gradient(180deg,rgba(217,178,95,.06),var(--panel) 55%)}
-
-/* ---------- tabs ---------- */
-.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
-.tab{
-  font:inherit;font-size:.88rem;cursor:pointer;
-  background:var(--panel);border:1px solid var(--line);color:var(--ink-2);
-  padding:10px 17px;border-radius:99px;transition:.16s;
-}
-.tab:hover{color:var(--ink);border-color:var(--gold-dim)}
-.tab[aria-selected="true"]{background:var(--gold);border-color:var(--gold);color:#1a1206;font-weight:600}
-.panel[hidden]{display:none}
-.opanel[hidden]{display:none}
-
-/* ---------- destination header ---------- */
-.dest-head{
-  display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between;
-  padding-bottom:20px;margin-bottom:26px;border-bottom:1px solid var(--line);
-}
-.dest-head h3{font-size:clamp(1.5rem,3.4vw,2rem);margin:0}
-.dest-head .loc{color:var(--ink-3);font-size:.8rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:5px}
-.dest-price{text-align:right}
-.dest-price b{font-family:var(--serif);font-size:2rem;color:var(--gold);display:block;line-height:1}
-.dest-price span{font-size:.75rem;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase}
-
-/* ---------- course list ---------- */
-.course{
-  display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--line-soft);
-}
-.course:last-child{border-bottom:none}
-.course .day{
-  font-family:var(--mono);font-size:.72rem;color:var(--gold);letter-spacing:.06em;
-  min-width:64px;flex-shrink:0;padding-top:3px;text-transform:uppercase;
-}
-.course .body b{display:block;font-family:var(--serif);font-size:1.06rem;margin-bottom:2px}
-.course .body .arch{color:var(--ink-3);font-size:.82rem;margin-bottom:6px}
-.course .body p{margin:0;color:var(--ink-2);font-size:.9rem}
-
-/* ---------- lists ---------- */
-ul.clean{list-style:none;padding:0;margin:0}
-ul.clean li{padding:7px 0 7px 22px;position:relative;color:var(--ink-2);font-size:.93rem;border-bottom:1px solid var(--line-soft)}
-ul.clean li:last-child{border-bottom:none}
-ul.clean li::before{content:"▸";position:absolute;left:0;color:var(--gold);font-size:.8rem;top:8px}
-ul.clean li b{color:var(--ink)}
-ul.plain{padding-left:20px;margin:8px 0;color:var(--ink-2)}
-ul.plain li{margin:5px 0}
-
-/* ---------- scorebar ---------- */
-.scores{display:grid;gap:11px;margin-top:6px}
-.score{display:grid;grid-template-columns:118px 1fr 34px;gap:11px;align-items:center;font-size:.83rem}
-.score .lab{color:var(--ink-3);letter-spacing:.05em;text-transform:uppercase;font-size:.71rem}
-.bar{height:7px;background:var(--bg-2);border-radius:99px;overflow:hidden;border:1px solid var(--line-soft)}
-.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold-dim),var(--gold));border-radius:99px}
-.score .val{font-family:var(--mono);color:var(--gold);font-size:.78rem;text-align:right}
-
-/* ---------- calc ---------- */
-.calc{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
-.calc-row{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin-bottom:22px}
-.calc label{display:block;font-size:.71rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
-.calc input[type=range]{width:190px;accent-color:var(--gold)}
-.calc output{font-family:var(--serif);font-size:1.35rem;color:var(--ink);margin-left:10px}
-.calc select{
-  font:inherit;background:var(--panel-2);color:var(--ink);border:1px solid var(--line);
-  border-radius:9px;padding:8px 12px;
-}
-.ck{display:flex;align-items:center;gap:8px;font-size:.88rem;color:var(--ink-2);cursor:pointer}
-.ck input{accent-color:var(--gold);width:16px;height:16px}
-
-/* ---------- verdict ---------- */
-.verdict{
-  border-left:3px solid var(--gold);padding:4px 0 4px 20px;margin:26px 0 0;
-}
-.verdict b{color:var(--gold);display:block;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
-.verdict p{margin:0;color:var(--ink-2)}
-
-.rank{
-  display:flex;gap:18px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--line-soft);
-}
-.rank:last-child{border-bottom:none}
-.rank .n{
-  font-family:var(--serif);font-size:2.1rem;color:var(--gold-dim);line-height:1;
-  min-width:44px;flex-shrink:0;
-}
-.rank h3{margin:0 0 6px;font-size:1.2rem}
-.rank p{margin:0;color:var(--ink-2);font-size:.95rem}
-
-/* ---------- images ---------- */
-figure{margin:0}
-.hero-img{
-  position:relative;border-radius:var(--radius);overflow:hidden;
-  border:1px solid var(--line);margin-bottom:26px;background:var(--panel-2);
-}
-.hero-img img{display:block;width:100%;height:clamp(200px,32vw,340px);object-fit:cover}
-.hero-img figcaption{
-  position:absolute;left:0;right:0;bottom:0;padding:26px 20px 14px;
-  background:linear-gradient(transparent,rgba(8,14,11,.9));
-  font-size:.8rem;color:#cfe0d7;
-}
-.hero-img figcaption b{color:var(--gold);font-family:var(--serif);font-size:1rem;display:block;margin-bottom:2px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:18px 0 4px}
-.gallery figure{border-radius:11px;overflow:hidden;border:1px solid var(--line);background:var(--panel-2)}
-.gallery img{display:block;width:100%;height:150px;object-fit:cover;transition:transform .35s ease}
-.gallery figure:hover img{transform:scale(1.05)}
-.gallery figcaption{padding:9px 12px;font-size:.78rem;color:var(--ink-2);line-height:1.4}
-.gallery figcaption b{display:block;color:var(--ink);font-size:.84rem}
-
-/* ---------- link buttons ---------- */
-.links{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
-.lnk{
-  display:inline-flex;align-items:center;gap:6px;
-  font-size:.78rem;letter-spacing:.02em;
-  background:var(--panel-2);border:1px solid var(--line);color:var(--ink-2);
-  padding:5px 11px;border-radius:99px;transition:.16s;text-decoration:none;
-}
-.lnk:hover{border-color:var(--gold-dim);color:var(--gold);text-decoration:none;background:rgba(217,178,95,.07)}
-.lnk::after{content:"↗";font-size:.72rem;opacity:.6}
-.lnk.primary{background:rgba(217,178,95,.12);border-color:var(--gold-dim);color:var(--gold)}
-
-/* ---------- view counter ---------- */
-.counter{
-  display:inline-flex;align-items:center;gap:9px;margin-top:22px;
-  background:var(--panel);border:1px solid var(--line);border-radius:99px;
-  padding:7px 15px 7px 13px;font-size:.8rem;color:var(--ink-3);
-}
-.counter[hidden]{display:none}
-.counter b{color:var(--gold);font-family:var(--mono);font-size:.86rem;letter-spacing:.02em}
-.counter .pulse{
-  width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;
-  box-shadow:0 0 0 0 rgba(78,168,122,.6);animation:pulse 2.4s ease-out infinite;
-}
-@keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(78,168,122,.55)}
-  70%{box-shadow:0 0 0 7px rgba(78,168,122,0)}
-  100%{box-shadow:0 0 0 0 rgba(78,168,122,0)}
-}
-@media (prefers-reduced-motion:reduce){ .counter .pulse{animation:none} }
-
-footer{padding:44px 0 60px;color:var(--ink-3);font-size:.85rem}
-footer p{margin:0 0 8px;max-width:75ch}
-
-@media (max-width:640px){
-  section{padding:44px 0}
-  .dest-price{text-align:left}
-  .score{grid-template-columns:96px 1fr 32px}
-}
-@media print{
-  nav{display:none}
-  .panel[hidden]{display:block !important}
-  body{background:#fff;color:#000}
-}
+  :root{
+    --ink:#14241c;
+    --ink-soft:#4a5b52;
+    --paper:#f7f5ef;
+    --card:#ffffff;
+    --green:#1d5c3f;
+    --green-deep:#0f3526;
+    --sand:#e6dcc4;
+    --line:#d8d2c2;
+    --flag:#b5462f;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    font-size:17px;
+    line-height:1.6;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px 80px;}
+  header.hero{
+    background:var(--green-deep);
+    color:#f3efe3;
+    padding:44px 0 36px;
+    margin-bottom:36px;
+  }
+  header.hero .wrap{padding-bottom:0;}
+  .kicker{font-size:14px;letter-spacing:.06em;color:#a9c6b5;margin:0 0 10px;}
+  h1{
+    font-size:40px;line-height:1.1;margin:0 0 14px;font-weight:600;
+  }
+  .hero p.lede{margin:0;max-width:60ch;color:#cfe0d6;font-size:18px;}
+  .facts{
+    display:flex;flex-wrap:wrap;gap:26px;margin-top:26px;
+    border-top:1px solid rgba(255,255,255,.18);padding-top:20px;
+  }
+  .facts div{min-width:120px;}
+  .facts .val{display:block;font-size:22px;color:#fff;}
+  .facts .lab{font-size:13px;color:#a9c6b5;}
+  h2{
+    font-size:26px;margin:48px 0 6px;font-weight:600;
+    border-bottom:2px solid var(--green);padding-bottom:8px;
+  }
+  h3{font-size:19px;margin:28px 0 6px;font-weight:600;}
+  p{margin:12px 0;max-width:72ch;}
+  .note{color:var(--ink-soft);font-size:15px;}
+  table{
+    width:100%;border-collapse:collapse;margin:18px 0;
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:15px;background:var(--card);
+  }
+  caption{
+    text-align:left;font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:14px;color:var(--ink-soft);padding-bottom:8px;
+  }
+  th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;}
+  thead th{background:var(--sand);border-bottom:2px solid var(--green);font-weight:600;}
+  td.num,th.num{text-align:right;white-space:nowrap;}
+  tr.pick td{background:#eef4ef;}
+  tr.pick td:first-child{box-shadow:inset 3px 0 0 var(--green);}
+  .tag{
+    display:inline-block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;
+    background:var(--green);color:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;
+  }
+  .flagbox{
+    background:#fdf3ef;border-left:4px solid var(--flag);
+    padding:14px 18px;margin:22px 0;
+  }
+  .flagbox h3{margin-top:0;color:var(--flag);}
+  .verdict{
+    background:var(--card);border:1px solid var(--line);border-top:4px solid var(--green);
+    padding:18px 22px;margin:24px 0;
+  }
+  .verdict h3{margin-top:0;}
+  ul{max-width:72ch;padding-left:22px;}
+  li{margin:7px 0;}
+  footer{
+    margin-top:56px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--ink-soft);
+  }
+  a{color:var(--green);}
+  @media(max-width:600px){
+    h1{font-size:30px;}
+    body{font-size:16px;}
+    table{font-size:14px;}
+    th,td{padding:9px 8px;}
+  }
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="wrap">
-    <span class="brand">⛳ Golf Trip 2027</span>
-    <a href="#decide">Decide</a>
-    <a href="#compare">Compare</a>
-    <a href="#flights">Flights</a>
-    <a href="#destinations">Destinations</a>
-    <a href="#cost">True Cost</a>
-    <a href="#action">Action</a>
-  </div>
-</nav>
-
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Tuesday Feb 23 → Sunday Feb 28, 2027 · 5 nights · 3 rounds</div>
-    <h1>Four quotes.<br>One <em>trip of a lifetime</em>.</h1>
-    <p class="lede">
-      Every quote on the table covers the same window: fly in Tuesday, three tournament-quality rounds
-      Wednesday through Friday, home Sunday. What changes is the golf, the flight, the price, and how
-      much trouble the group can find between rounds. Here's all of it, side by side.
-    </p>
-    <div class="hero-stats">
-      <div class="hero-stat"><b>4</b><span>Destinations</span></div>
-      <div class="hero-stat"><b>12</b><span>Golf courses</span></div>
-      <div class="hero-stat"><b>$2,072</b><span>Lowest / person</span></div>
-      <div class="hero-stat"><b>$2,869</b><span>Highest / person</span></div>
-      <div class="hero-stat"><b>3</b><span>Departure cities</span></div>
-    </div>
-
-    <div class="gallery" style="margin-top:34px">
-      <figure><img src="images/cun-mayakoba.jpg" alt="Mayakoba, Riviera Maya" width="1100" height="733" decoding="async" fetchpriority="high">
-        <figcaption><b>Cancún</b>El Camaleón, Hard Rock, Playa Paraíso</figcaption></figure>
-      <figure><img src="images/pvr-malecon.jpg" alt="Puerto Vallarta Malecón" width="1100" height="733" decoding="async">
-        <figcaption><b>Puerto Vallarta</b>Vista Vallarta, Vidanta, El Tigre</figcaption></figure>
-      <figure><img src="images/dr-chavon.jpg" alt="Altos de Chavón, Dominican Republic" width="1100" height="733" decoding="async">
-        <figcaption><b>Dominican Republic</b>Teeth of the Dog, Dye Fore, The Links</figcaption></figure>
-      <figure><img src="images/cr-conchal.jpg" alt="Playa Conchal, Costa Rica" width="1100" height="733" decoding="async">
-        <figcaption><b>Costa Rica</b>Reserva Conchal, Hacienda Pinilla</figcaption></figure>
+    <p class="kicker">Best4Golf quote 5195 · prepared 9 Sep 2026</p>
+    <h1>Riviera Maya golf trip<br>23–28 February 2027</h1>
+    <p class="lede">Twelve of us, five nights at the Riu Palace México, three rounds. Here is the quote broken down, what it actually costs once flights are added, and which room type is worth paying for.</p>
+    <div class="facts">
+      <div><span class="val">12</span><span class="lab">golfers</span></div>
+      <div><span class="val">5</span><span class="lab">nights</span></div>
+      <div><span class="val">3</span><span class="lab">rounds each</span></div>
+      <div><span class="val">6</span><span class="lab">suites (2 per room)</span></div>
+      <div><span class="val">26 Jul 2026</span><span class="lab">pricing expires</span></div>
     </div>
   </div>
 </header>
 
-<!-- =================== DECIDE =================== -->
-<section id="decide">
-  <div class="wrap">
-    <h2><span class="num">01 — The short answer</span>If you only read one screen</h2>
-    <p class="sub">
-      Three of these are very good trips. One is a genuinely great one. Which is "right" comes down to a
-      single question: is this group here for the <em>golf</em>, or for the <em>week</em>?
-    </p>
-
-    <div class="alert red">
-      <span class="ico">⏰</span>
-      <div>
-        <b>Deal with this first: every quote has either expired or is about to.</b>
-        <p>
-          Cancún and Puerto Vallarta both say "pricing effective until <b>July 26, 2026</b>" — already past.
-          The Dominican quote is good until <b>August 9, 2026</b>. Before you compare another number,
-          email Mariana/Diego and get all four re-validated at your real headcount. The prices below are
-          the negotiating baseline, not a guarantee.
-        </p>
-      </div>
-    </div>
-
-    <div class="grid g2" style="margin-top:26px">
-      <div class="card hi">
-        <span class="pill g">Recommended — best all-round</span>
-        <h3 style="margin-top:14px">Cancún / Riviera Maya — $2,259 pp</h3>
-        <p style="color:var(--ink-2)">
-          It wins the tiebreakers that actually decide whether a group trip is fun. <b>Daily nonstops from
-          Calgary on three airlines</b> — the only destination here where a missed connection or a sold-out
-          day isn't a crisis. Three completely different, genuinely good courses including <b>El Camaleón at
-          Mayakoba</b>, which hosted the PGA Tour for 16 years. All-inclusive Riu Palace so nobody's chasing
-          a bar tab. And the deepest non-golf menu of the four by a distance — cenotes, Tulum, Isla Mujeres,
-          Cozumel diving, Fifth Avenue.
-        </p>
-        <p style="color:var(--ink-2)"><b>Pick this if</b> the group has mixed handicaps, a couple of guys
-        who'd rather snorkel than play 54, and anyone flying in from a second city.</p>
-      </div>
-
-      <div class="card hi">
-        <span class="pill a">The splurge — best pure golf</span>
-        <h3 style="margin-top:14px">Casa de Campo, DR — $2,869 pp</h3>
-        <p style="color:var(--ink-2)">
-          This is the only option where the <b>golf itself</b> is the reason to go. <b>Teeth of the Dog</b> is
-          a top-60 course <em>in the world</em> and has been the Caribbean's #1 for fifty years — seven holes
-          carved into the rock right on the ocean. Add Dye Fore's 300-foot canyon holes and The Links, all
-          Pete Dye, all on one 7,000-acre property. Casa de Campo is a golf resort that happens to have a
-          beach, not the other way around.
-        </p>
-        <p style="color:var(--ink-2)"><b>Pick this if</b> the group are golfers first and will happily eat a
-        red-eye and a two-hour van ride for a course they'll talk about for twenty years. Budget an extra
-        <b>~$200 pp for mandatory caddies</b>.</p>
-      </div>
-    </div>
-
-    <div class="grid g2" style="margin-top:18px">
-      <div class="card">
-        <span class="pill b">Best value / most social</span>
-        <h3 style="margin-top:14px">Costa Rica — Tamarindo Diria, $2,072 pp</h3>
-        <p style="color:var(--ink-2)">
-          Cheapest on the sheet, includes a sunset catamaran, and the only itinerary with a <b>fully
-          refundable cancellation policy to 30 days out</b> — which for a 16-man group is worth real money.
-          Tamarindo's bars and restaurants are a walk from the lobby. Two caveats, both real: you play
-          <b>Reserva Conchal twice</b>, and late February is peak <b>Papagayo wind</b> season in Guanacaste —
-          30–50 mph is normal, gusts go higher. Confirm whether the Diria rate includes meals; if it doesn't,
-          the price advantage largely evaporates.
-        </p>
-      </div>
-      <div class="card">
-        <span class="pill">Shortest flight, best town</span>
-        <h3 style="margin-top:14px">Puerto Vallarta — $2,389 pp</h3>
-        <p style="color:var(--ink-2)">
-          The easiest travel day of the four — <b>4h50m nonstop</b>, three carriers, and the airport is
-          fifteen minutes from the hotel. February is <b>peak humpback whale season</b> in Banderas Bay, and
-          the Zona Romántica restaurant scene beats everything else here. But you're paying <b>$130 more than
-          Cancún</b> for a course lineup most golfers would rank below it, and the Vidanta round requires the
-          Ameca bridge crossing. Great week; slightly soft golf value.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =================== COMPARE =================== -->
-<section id="compare">
-  <div class="wrap">
-    <h2><span class="num">02 — Side by side</span>The master comparison</h2>
-    <p class="sub">
-      All prices are per golfer in <b>USD</b>, as quoted, at the group size each quote assumes.
-      Note the group sizes differ — Mexico was priced at 12, DR and Costa Rica at 16. That alone will move
-      numbers when you re-quote.
-    </p>
-
-    <div class="tscroll">
-      <table>
-        <thead>
-          <tr>
-            <th>&nbsp;</th>
-            <th>Cancún</th>
-            <th>Puerto Vallarta</th>
-            <th>Dominican Republic</th>
-            <th>Costa Rica</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="rowlab">Base resort</td>
-            <td>Riu Palace México<span class="tiny">Playa del Carmen · adults-only · AI</span></td>
-            <td>Riu Palace Pacífico<span class="tiny">Nuevo Vallarta · all-inclusive</span></td>
-            <td>Casa de Campo<span class="tiny">La Romana · 7,000-acre resort</span></td>
-            <td>Tamarindo Diria <span class="tiny">or Westin Reserva Conchal</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Price / golfer</td>
-            <td><span class="price best">$2,259</span><span class="tiny">Junior Suite</span></td>
-            <td><span class="price">$2,389</span><span class="tiny">Jr Suite, partial sea view</span></td>
-            <td><span class="price worst">$2,869</span><span class="tiny">Jr Suite dbl, all-inclusive</span></td>
-            <td><span class="price best">$2,072</span><span class="tiny">Diria · Westin = $2,816</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Upgrade option</td>
-            <td>$2,559<span class="tiny">Garden View Elite Club (+$300)</span></td>
-            <td>$2,859<span class="tiny">Ocean View Elite Club (+$470)</span></td>
-            <td>—<span class="tiny">single tier quoted</span></td>
-            <td>$2,816<span class="tiny">Westin Club, adults-only (+$744)</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Priced for</td>
-            <td>12 golfers<span class="tiny">$27,108 total</span></td>
-            <td>12 golfers<span class="tiny">$28,668 total</span></td>
-            <td>16 golfers<span class="tiny">$45,904 total</span></td>
-            <td>16 people<span class="tiny">$33,152 total (Diria)</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">The golf</td>
-            <td>Hard Rock <span class="tiny">von Hagge</span>
-                Iberostar Playa Paraíso <span class="tiny">P.B. Dye</span>
-                El Camaleón Mayakoba <span class="tiny">Norman · PGA Tour host</span></td>
-            <td>El Tigre <span class="tiny">von Hagge</span>
-                Vista Vallarta <span class="tiny">Weiskopf</span>
-                Vidanta <span class="tiny">Norman Signature</span></td>
-            <td>The Links <span class="tiny">Pete Dye</span>
-                Teeth of the Dog <span class="tiny">Dye · #59 in the world</span>
-                Dye Fore <span class="tiny">Pete Dye · canyon nine</span></td>
-            <td>Hacienda Pinilla <span class="tiny">Mike Young</span>
-                Reserva Conchal <span class="tiny">RTJ II</span>
-                Reserva Conchal <span class="tiny">again — repeat</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Golf verdict</td>
-            <td><span class="pill g">Strong &amp; varied</span></td>
-            <td><span class="pill a">Solid, not special</span></td>
-            <td><span class="pill g">Elite — bucket list</span></td>
-            <td><span class="pill a">Good, but repeats</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Nonstop from YYC</td>
-            <td class="best">Yes — daily<span class="tiny">WestJet, Air Canada, Flair · 5h20m</span></td>
-            <td class="best">Yes — ~6×/wk<span class="tiny">WestJet, Air Canada, Flair · 4h50m</span></td>
-            <td>Yes, to Punta Cana<span class="tiny">WestJet only, ~3×/wk · 6h52m red-eye</span></td>
-            <td>Yes, to Liberia<span class="tiny">WestJet only, seasonal · 6h50m red-eye</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Airport → hotel</td>
-            <td class="best">~50 min<span class="tiny">CUN → Playa del Carmen</span></td>
-            <td class="best">~15 min<span class="tiny">PVR → Nuevo Vallarta</span></td>
-            <td class="worst">~1h45–2h<span class="tiny">PUJ → La Romana (LRM is 10 min but no YYC nonstop)</span></td>
-            <td>~1h–1h15<span class="tiny">LIR → Tamarindo / Conchal</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Feb weather</td>
-            <td>28°C / 19°C<span class="tiny">3rd driest month · light breeze</span></td>
-            <td>28°C / 17°C<span class="tiny">driest month · calm, sunny</span></td>
-            <td>27°C / 24°C<span class="tiny">driest month · steady trade winds</span></td>
-            <td class="worst">30–35°C<span class="tiny">bone dry — but Papagayo winds 30–50 mph</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Cancellation</td>
-            <td>60d = deposit<span class="tiny">45d = 50% · 15d = 75% · 14d = 100%</span></td>
-            <td>60d = deposit<span class="tiny">45d = 50% · 15d = 75% · 14d = 100%</span></td>
-            <td>60d = deposit or $750<span class="tiny">whichever is less · then same ladder</span></td>
-            <td class="best">Fully refundable to 30 days<span class="tiny">$250 deposit · final pmt at 30d</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Non-golf depth</td>
-            <td><span class="pill g">Deepest</span><span class="tiny">Ruins, cenotes, Cozumel, PDC nightlife</span></td>
-            <td><span class="pill g">Excellent</span><span class="tiny">Whales, Marietas, best restaurants</span></td>
-            <td><span class="pill a">Resort-contained</span><span class="tiny">Shooting, Chavón, Saona, marina</span></td>
-            <td><span class="pill g">Adventure-led</span><span class="tiny">Volcano, zip, hot springs, surf</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Included transfers</td>
-            <td>Hiace van, 12 pax<span class="tiny">USA Transfers · golf transfers on 2 of 3 rounds</span></td>
-            <td>Sprinter, 12 pax<span class="tiny">VIP Vallarta · RT golf transfers day 1</span></td>
-            <td>Sprinter, 16 pax<span class="tiny">Casa de Campo · courses are on property</span></td>
-            <td>Private transfers<span class="tiny">+ catamaran included · SUVs recommended extra</span></td>
-          </tr>
-          <tr>
-            <td class="rowlab">Quote valid until</td>
-            <td class="worst">July 26, 2026 <span class="pill r">expired</span></td>
-            <td class="worst">July 26, 2026 <span class="pill r">expired</span></td>
-            <td class="worst">Aug 9, 2026 <span class="pill r">expiring</span></td>
-            <td>Not stated <span class="pill a">confirm</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="alert amber" style="margin-top:20px">
-      <span class="ico">🔎</span>
-      <div>
-        <b>Two errors worth flagging back to the agent.</b>
-        <p>
-          The Puerto Vallarta quote lists the transfer drop-off as <b>"Sun, Mar 28, 2027"</b> — a month
-          after you leave. Almost certainly a typo for Feb 28, but get it corrected in writing.
-          And the Costa Rica proposal is the only one that doesn't state a price-validity date or
-          confirm whether the Tamarindo Diria rate includes meals and drinks. Both matter.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =================== FLIGHTS =================== -->
-<section id="flights">
-  <div class="wrap">
-    <h2><span class="num">03 — Getting there</span>Nonstop from Calgary, Toronto &amp; Houston</h2>
-    <p class="sub">
-      All four destinations have a nonstop from all three cities in February — but the three groups will
-      have wildly different travel days. Calgary is the constrained one: two of its four routes hang on a
-      single WestJet flight with limited frequency, and the Tuesday arrival the quotes assume may not line
-      up. Houston golfers, by contrast, fly roughly half as long and pay roughly half as much.
-    </p>
-
-    <div class="alert green">
-      <span class="ico">🌎</span>
-      <div>
-        <b>Three things that only show up once you add Toronto and Houston.</b>
-        <p>
-          <b>1.</b> Toronto can fly <b>nonstop into La Romana (LRM)</b> — the airport <em>inside</em> Casa
-          de Campo, ten minutes from your room. That removes the two-hour van transfer that is the biggest
-          strike against the Dominican option, but only for the Toronto contingent.
-          <b>2.</b> February is the <em>most expensive</em> month of the year out of both Canadian cities and
-          one of the <em>cheapest</em> out of Houston — Texans aren't fleeing winter, so they're not bidding
-          the fares up. <b>3.</b> Houston's flight times are in a different class: 2h20m to Cancún and
-          3h34m to Liberia, against 5h20m and 6h50m from Calgary.
-        </p>
-      </div>
-    </div>
-
-    <h3 style="margin-top:34px">Pick a departure city</h3>
-    <div class="tabs" role="tablist" style="margin-bottom:20px">
-      <button class="tab otab" role="tab" aria-selected="true" data-panel="o-yyc">Calgary (YYC)</button>
-      <button class="tab otab" role="tab" aria-selected="false" data-panel="o-yyz">Toronto (YYZ)</button>
-      <button class="tab otab" role="tab" aria-selected="false" data-panel="o-iah">Houston (IAH/HOU)</button>
-    </div>
-
-    <div class="opanel" id="o-yyc" role="tabpanel">
-      <div class="tscroll">
-        <table>
-          <thead><tr><th>To</th><th style="text-align:right">Feb avg</th><th style="text-align:right">Time</th><th style="text-align:right">Weekly</th><th>Carriers</th></tr></thead>
-          <tbody>
-            <tr><td><b>Liberia</b> LIR <span class="tiny">Costa Rica</span></td><td style="text-align:right"><span class="price best">C$703</span></td><td style="text-align:right">6h50m</td><td style="text-align:right">~5</td><td>WestJet <span class="pill a">1 carrier</span></td></tr>
-            <tr><td><b>Cancún</b> CUN</td><td style="text-align:right"><span class="price">C$828</span></td><td style="text-align:right">5h20m</td><td style="text-align:right">~7</td><td>WestJet, Air Canada, Flair <span class="pill g">3</span></td></tr>
-            <tr><td><b>Puerto Vallarta</b> PVR</td><td style="text-align:right"><span class="price">C$897</span></td><td style="text-align:right">4h50m</td><td style="text-align:right">~6</td><td>WestJet, Air Canada, Flair <span class="pill g">3</span></td></tr>
-            <tr><td><b>Punta Cana</b> PUJ <span class="tiny">+ 2h drive to Casa de Campo</span></td><td style="text-align:right"><span class="price worst">C$1,538</span></td><td style="text-align:right">6h52m</td><td style="text-align:right">~3</td><td>WestJet <span class="pill r">1 carrier</span></td></tr>
-            <tr><td><b>La Romana</b> LRM <span class="tiny">the ideal DR airport</span></td><td style="text-align:right" class="worst">no nonstop</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td class="tiny">Toronto and Montreal only</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="color:var(--ink-2);font-size:.93rem;margin-top:14px">
-        <b>The constrained origin.</b> Cancún and Puerto Vallarta are comfortable — three carriers, near-daily
-        departures, real redundancy if someone misses a flight. Liberia and Punta Cana are single-carrier
-        WestJet routes, both frequently overnight departures, and both need their Tuesday service confirmed
-        before deposits. Costa Rica is the cheapest flight of the four from here, which is the opposite of
-        what most people assume.
-      </p>
-    </div>
-
-    <div class="opanel" id="o-yyz" role="tabpanel" hidden>
-      <div class="tscroll">
-        <table>
-          <thead><tr><th>To</th><th style="text-align:right">Feb avg</th><th style="text-align:right">Time</th><th style="text-align:right">Weekly</th><th>Carriers</th></tr></thead>
-          <tbody>
-            <tr><td><b>Punta Cana</b> PUJ</td><td style="text-align:right"><span class="price best">C$663</span></td><td style="text-align:right">~4h30m</td><td style="text-align:right">many</td><td>Air Canada, Transat, Arajet, Flair, WestJet <span class="pill g">5</span></td></tr>
-            <tr><td><b>Liberia</b> LIR <span class="tiny">Costa Rica</span></td><td style="text-align:right"><span class="price">~C$680</span></td><td style="text-align:right">5h15–5h45</td><td style="text-align:right">10</td><td>WestJet, Porter, Transat, Air Canada <span class="pill g">4</span></td></tr>
-            <tr><td><b>Puerto Vallarta</b> PVR</td><td style="text-align:right"><span class="price">~C$725</span></td><td style="text-align:right">~5h20m</td><td style="text-align:right">19</td><td>Air Canada, Transat, Flair, Porter, WestJet <span class="pill g">5</span></td></tr>
-            <tr><td><b>Cancún</b> CUN</td><td style="text-align:right"><span class="price">C$736</span></td><td style="text-align:right">4h00m</td><td style="text-align:right">44</td><td>Air Canada, Transat, Flair, Porter, WestJet <span class="pill g">5</span></td></tr>
-            <tr><td><b>La Romana</b> LRM <span class="tiny">10 min from Casa de Campo</span></td><td style="text-align:right"><span class="price">~C$750</span></td><td style="text-align:right">4h25m</td><td style="text-align:right">seasonal</td><td>WestJet, Nov–Apr <span class="pill b">the smart routing</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="color:var(--ink-2);font-size:.93rem;margin-top:14px">
-        <b>The easy origin.</b> Toronto has more carriers, more frequency and lower fares than Calgary to
-        every single destination — 44 weekly flights to Cancún alone. And it is the only one of the three
-        cities that can fly <b>straight into Casa de Campo's own airport</b>: WestJet runs YYZ–LRM seasonally
-        from November through April on a 737 MAX 8, 4h25m, landing ten minutes from the resort gate. If a
-        meaningful share of the group is coming from Toronto, the Dominican option gets substantially more
-        attractive than the Calgary-only view suggests.
-      </p>
-    </div>
-
-    <div class="opanel" id="o-iah" role="tabpanel" hidden>
-      <div class="tscroll">
-        <table>
-          <thead><tr><th>To</th><th style="text-align:right">Feb avg</th><th style="text-align:right">Time</th><th style="text-align:right">Weekly</th><th>Carriers</th></tr></thead>
-          <tbody>
-            <tr><td><b>Puerto Vallarta</b> PVR</td><td style="text-align:right"><span class="price best">~$290</span></td><td style="text-align:right">~3h00m</td><td style="text-align:right">19</td><td>United (IAH), Southwest (HOU) <span class="pill g">2</span></td></tr>
-            <tr><td><b>Cancún</b> CUN</td><td style="text-align:right"><span class="price best">$338</span></td><td style="text-align:right">2h20m</td><td style="text-align:right">100+</td><td>United 6×/day (IAH), Southwest 3×/day (HOU) <span class="pill g">2</span></td></tr>
-            <tr><td><b>Liberia</b> LIR <span class="tiny">Costa Rica</span></td><td style="text-align:right"><span class="price">~$420</span></td><td style="text-align:right">3h34m</td><td style="text-align:right">12</td><td>United, ~2×/day <span class="pill a">1 carrier</span></td></tr>
-            <tr><td><b>Punta Cana</b> PUJ <span class="tiny">+ 2h drive to Casa de Campo</span></td><td style="text-align:right"><span class="price">~$480</span></td><td style="text-align:right">4h19m</td><td style="text-align:right">7–14</td><td>United, 1–2×/day <span class="pill a">1 carrier</span></td></tr>
-            <tr><td><b>La Romana</b> LRM</td><td style="text-align:right" class="worst">no nonstop</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td class="tiny">connect, or fly PUJ</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="color:var(--ink-2);font-size:.93rem;margin-top:14px">
-        <b>The easy origin, for different reasons.</b> Houston is a United hub with Southwest at Hobby as a
-        second option, and February is one of the <em>cheapest</em> months of the year out of Texas rather
-        than the most expensive — no winter-escape premium. Cancún is 2h20m and roughly a hundred weekly
-        departures across the two airports. Even Liberia, the long one, is 3h34m. Whatever the group
-        chooses, the Houston contingent has the shortest day and the smallest bill.
-        <span class="tiny" style="display:block;margin-top:8px">Note: IAH and HOU are different airports
-        ~45 min apart. United flies from IAH, Southwest from Hobby — worth coordinating so the group isn't split.</span>
-      </p>
-    </div>
-
-    <h3>Same trip, three very different travel days</h3>
-    <div class="tscroll">
-      <table>
-        <thead>
-          <tr><th>Destination</th><th style="text-align:right">Calgary</th><th style="text-align:right">Toronto</th><th style="text-align:right">Houston</th><th>Who has it easiest</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>Cancún</b></td>
-            <td style="text-align:right">C$828 · 5h20m</td>
-            <td style="text-align:right">C$736 · 4h00m</td>
-            <td style="text-align:right" class="best">$338 · 2h20m</td>
-            <td class="tiny">Houston, by a mile — but everyone is fine</td>
-          </tr>
-          <tr>
-            <td><b>Puerto Vallarta</b></td>
-            <td style="text-align:right">C$897 · 4h50m</td>
-            <td style="text-align:right">~C$725 · 5h20m</td>
-            <td style="text-align:right" class="best">~$290 · 3h00m</td>
-            <td class="tiny">Houston; Calgary's shortest flight of the four</td>
-          </tr>
-          <tr>
-            <td><b>Dominican Rep.</b></td>
-            <td style="text-align:right" class="worst">C$1,538 · 6h52m<span class="tiny">+2h drive</span></td>
-            <td style="text-align:right" class="best">~C$750 · 4h25m<span class="tiny">lands at the resort</span></td>
-            <td style="text-align:right">~$480 · 4h19m<span class="tiny">+2h drive</span></td>
-            <td class="tiny">Toronto — only city with the LRM nonstop</td>
-          </tr>
-          <tr>
-            <td><b>Costa Rica</b></td>
-            <td style="text-align:right">C$703 · 6h50m</td>
-            <td style="text-align:right">~C$680 · 5h30m</td>
-            <td style="text-align:right" class="best">~$420 · 3h34m</td>
-            <td class="tiny">Houston; Calgary's cheapest of the four</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="font-size:.82rem;color:var(--ink-3);margin:12px 0 22px">
-      Calgary and Toronto in CAD, Houston in USD — each city's home currency. Figures marked "~" are
-      estimates interpolated from route averages where a February-specific number wasn't published;
-      the rest are published February averages as of Aug 2026.
-    </p>
-
-    <div class="alert amber">
-      <span class="ico">🧭</span>
-      <div>
-        <b>If the group is genuinely split across three cities, this reshuffles the ranking.</b>
-        <p>
-          The Calgary-only view makes the Dominican Republic look expensive and awkward — a C$1,538 red-eye
-          plus a two-hour drive. Add Toronto golfers landing at LRM for around C$750 and Houston golfers at
-          4h19m, and Casa de Campo stops being the logistically painful choice for most of the group. It's
-          still the priciest package by a wide margin, but the <em>travel</em> objection largely applies to
-          Calgary alone. Worth knowing before you let flight hassle veto the best golf.
-        </p>
-      </div>
-    </div>
-
-    <h3>The old Calgary detail</h3>
-    <p class="sub" style="margin-bottom:22px">Kept below for the Calgary contingent, who have the tightest constraints.</p>
-
-    <div class="grid g2">
-      <div class="card hi">
-        <h3>🥇 Cancún (CUN) — the safe bet</h3>
-        <ul class="clean">
-          <li><b>WestJet</b> — year-round, roughly daily</li>
-          <li><b>Air Canada</b> — seasonal, from December</li>
-          <li><b>Flair</b> — seasonal, from December</li>
-          <li><b>~7 departures/week</b> · 5h20m · 4,088 km</li>
-          <li>Economy, premium economy and business all sold</li>
-        </ul>
-        <div class="verdict">
-          <b>Why it matters</b>
-          <p>Three carriers and a daily departure means the group can arrive on different flights, book at
-          different times, and still all get there. It's the only destination here with real redundancy if
-          something goes sideways.</p>
-        </div>
-      </div>
-
-      <div class="card hi">
-        <h3>🥈 Puerto Vallarta (PVR) — the easiest day</h3>
-        <ul class="clean">
-          <li><b>WestJet</b> — year-round</li>
-          <li><b>Air Canada</b> — from December</li>
-          <li><b>Flair</b> — from October</li>
-          <li><b>~6 departures/week</b> · 4h50m · 3,468 km</li>
-          <li>Shortest flight of the four by ~2 hours</li>
-        </ul>
-        <div class="verdict">
-          <b>Why it matters</b>
-          <p>Leave Calgary mid-morning, be on a lounger by mid-afternoon. Add a 15-minute airport transfer
-          and it's the only option where Tuesday is a usable half-day rather than a write-off.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>🥉 Costa Rica — Liberia (LIR)</h3>
-        <ul class="clean">
-          <li><b>WestJet only</b> — seasonal winter service</li>
-          <li>Up to ~5×/week in peak season</li>
-          <li><b>6h50m</b> · frequently an overnight (e.g. 23:35 → 06:25)</li>
-          <li>Air Canada flies LIR from Vancouver, <b>not Calgary</b></li>
-          <li>LIR → Tamarindo/Conchal ≈ 60–75 min</li>
-        </ul>
-        <div class="alert amber" style="margin-top:16px;padding:14px 16px">
-          <span class="ico">⚠️</span>
-          <div><b>Tuesday risk.</b><p>Published YYC–LIR service clusters Wednesday through Sunday. If there's
-          no Tuesday departure in the Feb 2027 schedule you'll need to shift the itinerary a day or fly
-          Monday and eat a night. Verify before deposits.</p></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Dominican Republic — Punta Cana (PUJ)</h3>
-        <ul class="clean">
-          <li><b>WestJet only</b> — ~3×/week, seasonal</li>
-          <li><b>6h52m</b> · departs ~00:05–01:05, arrives ~09:00</li>
-          <li>Boeing 737 MAX 8 · economy + premium only</li>
-          <li class="worst"><b>La Romana (LRM)</b> is 10 min from Casa de Campo but has <b>no Calgary
-          nonstop</b> — Air Transat serves it from Toronto and Montreal only</li>
-          <li>PUJ → Casa de Campo ≈ 1h45–2h by road</li>
-        </ul>
-        <div class="alert amber" style="margin-top:16px;padding:14px 16px">
-          <span class="ico">⚠️</span>
-          <div><b>The real cost of the DR.</b><p>A midnight red-eye, a 9am landing, then two hours in a
-          Sprinter. You'll arrive tired. Worth it for Teeth of the Dog — but tell the group in advance so
-          nobody books a Tuesday afternoon tee time.</p></div>
-        </div>
-      </div>
-    </div>
-
-    <h3>What the flights actually cost — February averages, CAD</h3>
-    <p class="sub" style="margin-bottom:20px">
-      Round-trip economy from Calgary, February averages as published today (Aug 7, 2026) by
-      Cheapflights.ca, KAYAK and momondo. February is the most expensive month of the year on every one of
-      these routes, so treat these as the realistic planning number rather than the fare you'll see advertised.
-    </p>
-
-    <div class="tscroll">
-      <table>
-        <thead>
-          <tr>
-            <th>Route</th>
-            <th style="text-align:right">Feb average</th>
-            <th style="text-align:right">Typical range</th>
-            <th style="text-align:right">Seen as low as</th>
-            <th>Carriers</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>YYC → LIR</b> Costa Rica<span class="tiny">Liberia</span></td>
-            <td style="text-align:right"><span class="price best">C$703</span></td>
-            <td style="text-align:right">C$430–850</td>
-            <td style="text-align:right" class="tiny">C$422</td>
-            <td>WestJet only <span class="pill a">1 carrier</span></td>
-          </tr>
-          <tr>
-            <td><b>YYC → CUN</b> Cancún<span class="tiny">route avg all year: C$785</span></td>
-            <td style="text-align:right"><span class="price">C$828</span></td>
-            <td style="text-align:right">C$630–900</td>
-            <td style="text-align:right" class="tiny">C$412</td>
-            <td>WestJet, Air Canada, Flair <span class="pill g">3 carriers</span></td>
-          </tr>
-          <tr>
-            <td><b>YYC → PVR</b> Puerto Vallarta<span class="tiny">cheapest month, Sept: C$485</span></td>
-            <td style="text-align:right"><span class="price">C$897</span></td>
-            <td style="text-align:right">C$560–950</td>
-            <td style="text-align:right" class="tiny">C$348</td>
-            <td>WestJet, Air Canada, Flair <span class="pill g">3 carriers</span></td>
-          </tr>
-          <tr>
-            <td><b>YYC → PUJ</b> Punta Cana<span class="tiny">for Casa de Campo · + 2h drive</span></td>
-            <td style="text-align:right"><span class="price worst">C$1,538</span></td>
-            <td style="text-align:right">C$730–1,550</td>
-            <td style="text-align:right" class="tiny">C$591</td>
-            <td>WestJet only <span class="pill r">1 carrier, 3×/wk</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="alert amber" style="margin-top:18px">
-      <span class="ico">📊</span>
-      <div>
-        <b>Read the Punta Cana number with some caution.</b>
-        <p>
-          KAYAK puts February and April as the two most expensive months on YYC–PUJ at
-          <b>C$1,538 and C$1,438</b> — which fits a single carrier flying three times a week into peak
-          Caribbean season. Cheapflights, working from a different data set, shows a much gentler
-          route-wide average of C$794. The honest answer is that this route is <b>volatile and thinly
-          served</b>, so the spread between a good booking and a bad one is far wider than on the Mexico
-          routes. Budget high and book early, or shop it hard.
-        </p>
-      </div>
-    </div>
-
-    <div class="alert green" style="margin-top:14px">
-      <span class="ico">✈️</span>
-      <div>
-        <b>The surprise: Costa Rica has the cheapest flight, not the most expensive.</b>
-        <p>
-          At a <b>C$703</b> February average, Liberia comes in roughly <b>C$125 under Cancún</b> and
-          <b>C$195 under Puerto Vallarta</b> — despite being the longest of the three and served by a single
-          airline. WestJet appears to be pricing LIR to fill a seasonal route. That materially strengthens
-          Costa Rica's value case and it's the single biggest change to the maths on this page.
-        </p>
-      </div>
-    </div>
-
-    <h3>Booking notes for a group this size</h3>
-    <ul class="clean">
-      <li><b>Book flights before you pay the land deposit.</b> Three of these four itineraries assume a
-      Tuesday arrival that only Cancún and Puerto Vallarta can comfortably deliver.</li>
-      <li><b>WestJet group bookings (10+)</b> hold seats with a smaller deposit and later name deadlines
-      than individual fares — worth a call for a 12–16 man block on the single-carrier routes.</li>
-      <li><b>Watch the clubs.</b> WestJet and Air Canada both treat golf bags as standard checked baggage
-      within weight limits; Flair charges for everything. On a 5-hour flight the cheap fare stops being
-      cheap once 16 sets of sticks are aboard.</li>
-      <li><b>Frequency = leverage.</b> On CUN and PVR you can shop three airlines. On LIR and PUJ, WestJet
-      knows it's the only game in town and February is peak.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- =================== DESTINATIONS =================== -->
-<section id="destinations">
-  <div class="wrap">
-    <h2><span class="num">04 — The deep dive</span>Every destination, in full</h2>
-    <p class="sub">Courses, lodging, what to do when you're not playing, and an honest verdict on each.</p>
-
-    <div class="tabs" role="tablist">
-      <button class="tab" role="tab" aria-selected="true" data-panel="p-cun">Cancún</button>
-      <button class="tab" role="tab" aria-selected="false" data-panel="p-pvr">Puerto Vallarta</button>
-      <button class="tab" role="tab" aria-selected="false" data-panel="p-dr">Dominican Republic</button>
-      <button class="tab" role="tab" aria-selected="false" data-panel="p-cr">Costa Rica</button>
-    </div>
-
-    <!-- ---------- CANCUN ---------- -->
-    <div class="panel" id="p-cun" role="tabpanel">
-      <div class="dest-head">
-        <div>
-          <div class="loc">Riviera Maya · Quintana Roo, Mexico · Quote 5128</div>
-          <h3>Cancún &amp; the Riviera Maya</h3>
-        </div>
-        <div class="dest-price"><b>$2,259</b><span>per golfer · 12 pax</span></div>
-      </div>
-
-      <figure class="hero-img">
-        <img src="images/cun-mayakoba.jpg" alt="Mayakoba resort and waterways, Riviera Maya" loading="lazy">
-        <figcaption><b>Mayakoba, Riviera Maya</b>The mangrove canals and lagoons that El Camaleón threads through.</figcaption>
-      </figure>
-
-      <h4>The rounds</h4>
-      <div class="course">
-        <div class="day">Wed 24</div>
-        <div class="body">
-          <b>Hard Rock Golf Club, Riviera Maya</b>
-          <div class="arch">Robert von Hagge · 9:00 AM · food &amp; drinks on course included</div>
-          <p>Formerly the Golf Club de Playacar, and the first championship course built on the Mayan
-          Riviera. Wide, muscular von Hagge shaping with big greens and enough water to punish a lazy miss.
-          A fair opener that lets the group shake off the travel day — and the on-course F&amp;B in this
-          package means the beers start early.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://hotel.hardrock.com/riviera-maya/world-class-golf.aspx" target="_blank" rel="noopener">Official site</a>
-            <a class="lnk" href="https://www.golfnow.com/tee-times/facility/3455-hard-rock-golf-club-riviera-maya/search" target="_blank" rel="noopener">Tee times &amp; rates</a>
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="day">Thu 25</div>
-        <div class="body">
-          <b>Iberostar Playa Paraíso</b>
-          <div class="arch">P.B. Dye · 9:00 AM · food, drinks and shared transport included</div>
-          <p>The quirky one, and a lot of groups' surprise favourite. Classic P.B. Dye theatre — severe
-          contouring, jungle corridors, greens that repel anything not struck properly. Golfweek has ranked
-          it among the top Caribbean/Mexico courses. Bring a sense of humour and extra balls.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.iberostar.com/en/golf/playa-paraiso/" target="_blank" rel="noopener">Official site</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/22456-iberostar-cancun-golf-club" target="_blank" rel="noopener">Reviews</a>
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="day">Fri 26</div>
-        <div class="body">
-          <b>El Camaleón at Mayakoba</b>
-          <div class="arch">Greg Norman · 9:00 AM · round + shared transport included</div>
-          <p><b>The headline act.</b> Host of the first PGA Tour event ever staged outside the US and Canada,
-          and a Tour stop for 16 seasons. 7,039 yards through three completely distinct landscapes —
-          tropical jungle, dense mangrove, and oceanfront dune — with two holes on the Caribbean looking
-          across to Cozumel. There's a limestone cenote in the middle of a fairway. It's the kind of round
-          people photograph.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://mayakoba.com/el-camaleon-golf-course/" target="_blank" rel="noopener">Official site &amp; photos</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/22439-el-camaleon-mayakoba-golf-club" target="_blank" rel="noopener">GolfPass reviews</a>
-            <a class="lnk" href="https://www.top100golfcourses.com/golf-course/mayakoba-el-camaleon" target="_blank" rel="noopener">Top100 profile</a>
-          </div>
-        </div>
-      </div>
-
-      <h4>Where you stay</h4>
-      <div class="grid g2">
-        <div class="card">
-          <h3 style="font-size:1.05rem">Riu Palace México — Junior Suite · $2,259</h3>
-          <p style="color:var(--ink-2);font-size:.93rem">Adults-only, beachfront on Playa del Carmen,
-          fully all-inclusive. Junior suites are genuinely large with a separate sitting area and a
-          liquor dispenser in-room. Multiple à la carte restaurants, 24-hour room service, and — the part
-          that matters for a golf group — <b>you can walk out the back gate onto Fifth Avenue</b>.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.riu.com/en/hotel/mexico/playa-del-carmen/hotel-riu-palace-mexico/" target="_blank" rel="noopener">Riu official site</a>
-            <a class="lnk" href="https://www.tripadvisor.com/Hotel_Review-g150812-d219633-Reviews-Hotel_Riu_Palace_Mexico-Playa_del_Carmen_Yucatan_Peninsula.html" target="_blank" rel="noopener">Tripadvisor</a>
-          </div>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1.05rem">Elite Club upgrade · $2,559 <span class="pill a">+$300</span></h3>
-          <p style="color:var(--ink-2);font-size:.93rem">Garden View Elite Club adds a private lounge,
-          upgraded liquor, priority restaurant reservations and a dedicated pool/beach area. For $300 across
-          five nights it's the easiest upsell on this whole page to justify — but only if the group wants a
-          base to sit around in. If you're out playing and exploring all day, skip it.</p>
-          <div class="links">
-            <a class="lnk" href="https://www.riu.com/en/hotel/mexico/playa-del-carmen/hotel-riu-palace-mexico/elite-club" target="_blank" rel="noopener">What Elite Club includes</a>
-          </div>
-        </div>
-      </div>
-
-      <h4>The Riviera Maya, off the course</h4>
-      <div class="gallery">
-        <figure>
-          <img src="images/cun-tulum.jpg" alt="Tulum ruins above the Caribbean" loading="lazy">
-          <figcaption><b>Tulum</b>Cliffside Mayan ruins, an hour south.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cun-chichen.jpg" alt="El Castillo pyramid at Chichén Itzá" loading="lazy">
-          <figcaption><b>Chichén Itzá</b>One of the New Seven Wonders.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cun-reef.jpg" alt="Palancar Reef, Cozumel" loading="lazy">
-          <figcaption><b>Palancar Reef</b>World-class diving off Cozumel.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cun-playa.jpg" alt="Beach at Playa del Carmen" loading="lazy">
-          <figcaption><b>Playa del Carmen</b>Your base, and Fifth Avenue.</figcaption>
-        </figure>
-      </div>
-
-      <h4>When you're not playing</h4>
-      <div class="grid g3">
-        <div class="card">
-          <h3 style="font-size:1rem">🏛 Ruins &amp; cenotes</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Tulum's cliffside ruins sit right above the
-          Caribbean — an hour away. Chichén Itzá is a full day but it's one of the New Seven Wonders.
-          In between, Dos Ojos and Gran Cenote let you swim through underground limestone caverns.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🎣 Fishing &amp; diving</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">February is prime sailfish season off the Yucatán.
-          Charter a boat for the Saturday. Or take the ferry to Cozumel and dive Palancar Reef — part of the
-          second-largest barrier reef on earth, with 30m+ visibility.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">⛵ Isla Mujeres day</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">The classic group catamaran: open bar, snorkel stop
-          at the reef, lunch on the island, and Playa Norte — routinely voted one of the best beaches in the
-          world. The easiest "everyone's happy" day on this list.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🌴 Eco-parks</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Xcaret, Xel-Há and Xplor — underground river swims,
-          zip-line circuits, amphibious vehicles. Xplor in particular is a very good hangover cure for a
-          group that overdid Thursday.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🍸 Fifth Avenue</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Playa del Carmen's Quinta Avenida is a kilometres-long
-          pedestrian strip of restaurants, rooftop bars and mezcalerías. Coco Bongo if the group wants a
-          spectacle. All of it walkable from the Riu.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">⛳ Bonus 18</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">PGA Riviera Maya, Moon Palace and Playa Mujeres are all
-          within reach if anyone wants a fourth round on the Saturday. No other destination here gives you
-          that many spare options.</p>
-        </div>
-      </div>
-
-      <div class="verdict">
-        <b>Verdict</b>
-        <p>The most <em>bookable</em> trip on the sheet, and it doesn't compromise much to get there.
-        Cheapest of the three all-inclusive options, best flight access by a wide margin, three genuinely
-        distinct courses with a real headliner, and enough off-course variety that a 12–16 man group with
-        different appetites all gets a good week. If the group can't reach consensus, this is the one nobody
-        will be unhappy about.</p>
-      </div>
-    </div>
-
-    <!-- ---------- PVR ---------- -->
-    <div class="panel" id="p-pvr" role="tabpanel" hidden>
-      <div class="dest-head">
-        <div>
-          <div class="loc">Nuevo Vallarta · Nayarit / Jalisco, Mexico · Quote 5126</div>
-          <h3>Puerto Vallarta</h3>
-        </div>
-        <div class="dest-price"><b>$2,389</b><span>per golfer · 12 pax</span></div>
-      </div>
-
-      <figure class="hero-img">
-        <img src="images/pvr-nuevo.jpg" alt="Sunset over the Pacific at Nuevo Vallarta" loading="lazy">
-        <figcaption><b>Nuevo Vallarta</b>Sunset over Banderas Bay — the Riu Palace Pacífico sits on this stretch.</figcaption>
-      </figure>
-
-      <h4>The rounds</h4>
-      <div class="course">
-        <div class="day">Wed 24</div>
-        <div class="body">
-          <b>El Tigre Club de Golf</b>
-          <div class="arch">Robert von Hagge &amp; Rick Baril · 9:00 AM · round-trip transfers included</div>
-          <p>Water on twelve holes and a Mayan-inspired routing through Paradise Village. Flat, long and
-          exposed — it plays harder than it looks, especially into the afternoon breeze. The signature is a
-          par-3 island green with live tigers in an enclosure nearby, which is either a gimmick or a great
-          story depending on your mood.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.eltigregolf.com/" target="_blank" rel="noopener">Official site</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/22436-el-tigre-golf-country-club" target="_blank" rel="noopener">Reviews</a>
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="day">Thu 25</div>
-        <div class="body">
-          <b>Vista Vallarta — Weiskopf Course</b>
-          <div class="arch">Tom Weiskopf · 9:00 AM</div>
-          <p>The best course of this three, and the reason to come. Cut into dense jungle in the Sierra Madre
-          foothills with tight fairways, deep arroyos and serious bunkering, but more receptive greens and
-          fewer blind shots than its Nicklaus sibling next door. The uphill par-3 15th over a canyon is
-          the shot of the week. Vista Vallarta hosted the 2002 World Cup.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.vistavallartagolf.com/" target="_blank" rel="noopener">Official site</a>
-            <a class="lnk" href="https://www.invitedclubs.com/clubs/vista-vallarta-club-de-golf" target="_blank" rel="noopener">Club page</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/22569-vista-vallarta-golf-club-the-weiskopf-course" target="_blank" rel="noopener">GolfPass reviews</a>
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="day">Fri 26</div>
-        <div class="body">
-          <b>Vidanta — Norman Signature Course</b>
-          <div class="arch">Greg Norman · 9:00 AM</div>
-          <p>Wall-to-wall paspalum and consistently the best-conditioned surface in the region — the greens
-          roll true and fast. Reached across the Ameca bridge, which adds a little transit but keeps the
-          course quiet. Less dramatic than Weiskopf, but if your group cares about conditioning this is the
-          round they'll compliment. It now hosts the PGA Tour's Mexico Open.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://vidanta.com/web/nuevo-nayarit/the-norman-signature-course" target="_blank" rel="noopener">Official site</a>
-            <a class="lnk" href="https://gngcd.com/courses/the-norman-course-at-vidanta-nuevo-vallarta/" target="_blank" rel="noopener">Norman design notes</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/35241-the-greg-norman-signature-course-at-vidanta-nuevo-vallarta" target="_blank" rel="noopener">Reviews</a>
-          </div>
-        </div>
-      </div>
-
-      <h4>Where you stay</h4>
-      <div class="grid g2">
-        <div class="card">
-          <h3 style="font-size:1.05rem">Riu Palace Pacífico — Jr Suite, partial sea view · $2,389</h3>
-          <p style="color:var(--ink-2);font-size:.93rem">All-inclusive on Playa Flamingos in Nuevo Vallarta,
-          about 15 minutes from the airport and 25 from downtown PV. Large junior suites, several à la carte
-          restaurants, a long stretch of swimmable beach. Quieter than the Riviera Maya Riu — this is a
-          resort you retreat to, with the nightlife a short taxi away rather than out the back door.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.riu.com/en/hotel/mexico/vallarta-riviera-nayarit/hotel-riu-palace-pacifico" target="_blank" rel="noopener">Riu official site</a>
-            <a class="lnk" href="https://www.riupalacepacificoresort.com/" target="_blank" rel="noopener">Rooms &amp; dining detail</a>
-            <a class="lnk" href="https://www.tripadvisor.com/Hotel_Review-g9723540-d1097502-Reviews-Hotel_Riu_Palace_Pacifico-Flamingos_Nuevo_Nayarit_Pacific_Coast.html" target="_blank" rel="noopener">Tripadvisor</a>
-          </div>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1.05rem">Ocean View Elite Club · $2,859 <span class="pill r">+$470</span></h3>
-          <p style="color:var(--ink-2);font-size:.93rem">Full ocean view plus Elite Club lounge, premium
-          spirits and priority dining. At $470 a head it's the most expensive upgrade on this page and pushes
-          Puerto Vallarta past Casa de Campo territory. Hard to justify unless the view genuinely matters to
-          the group — spend it on a fishing charter instead.</p>
-          <div class="links">
-            <a class="lnk" href="https://www.riu.com/blog/en/elite-club-by-riu-the-new-concept/" target="_blank" rel="noopener">What Elite Club includes</a>
-          </div>
-        </div>
-      </div>
-
-      <h4>Banderas Bay, off the course</h4>
-      <div class="gallery">
-        <figure>
-          <img src="images/pvr-whale.jpg" alt="Humpback whale breaching off Puerto Vallarta" loading="lazy">
-          <figcaption><b>Humpbacks</b>February is peak season in the bay.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/pvr-marietas.jpg" alt="Islas Marietas marine park" loading="lazy">
-          <figcaption><b>Islas Marietas</b>Hidden Beach and the best snorkelling.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/pvr-malecon.jpg" alt="The Malecón boardwalk, Puerto Vallarta" loading="lazy">
-          <figcaption><b>The Malecón</b>Old town, sculptures, rooftop dining.</figcaption>
-        </figure>
-      </div>
-
-      <h4>When you're not playing</h4>
-      <div class="grid g3">
-        <div class="card">
-          <h3 style="font-size:1rem">🐋 Humpback whales</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)"><b>February is the peak.</b> Banderas Bay is one of the
-          largest humpback breeding grounds in the Pacific and you'll see breaching from the boat, from the
-          beach, sometimes from the tee box. This is the single best "wow" moment available across all four
-          destinations and it's free with almost any boat trip.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🏝 Marietas Islands</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">A protected marine park with the famous Hidden Beach
-          — a collapsed crater you swim into through a sea tunnel. Access is permit-limited so book early.
-          Snorkelling here is the best on Mexico's Pacific coast.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🍽 Zona Romántica</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)"><b>The best restaurant scene of the four, comfortably.</b>
-          Old-town cobblestones, rooftop dining over the Malecón, world-class seafood and a serious mezcal
-          culture. If the group are eaters, this is your destination.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🎣 Sportfishing</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Banderas Bay produces sailfish, dorado and roosterfish
-          year-round, with the deep water close to shore so you're fishing within 30 minutes of the marina.
-          Half-day charters work well around a golf schedule.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🏄 Sayulita &amp; San Pancho</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">45 minutes north — surf towns with beach bars, taco
-          stands and a completely different energy from the resort strip. Easy half-day with a driver.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🥃 Tequila country</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">You're in Jalisco. Distillery tours in the agave
-          fields, or the shorter Vallarta-based tastings. A very easy sell to a golf group on the Saturday.</p>
-        </div>
-      </div>
-
-      <div class="verdict">
-        <b>Verdict</b>
-        <p>The best <em>week</em>, arguably — shortest flight, best food, whales in the bay, a proper town
-        instead of a resort strip. But it's $130 more than Cancún for a course lineup most golfers would rank
-        a notch below, and Vista Vallarta is doing a lot of the heavy lifting. If the trip is really a
-        guys' week that happens to include golf, this is a strong pick. If it's a golf trip, Cancún gives
-        you more for less.</p>
-      </div>
-    </div>
-
-    <!-- ---------- DR ---------- -->
-    <div class="panel" id="p-dr" role="tabpanel" hidden>
-      <div class="dest-head">
-        <div>
-          <div class="loc">La Romana · Dominican Republic · quoted Aug 4, 2026</div>
-          <h3>Casa de Campo</h3>
-        </div>
-        <div class="dest-price"><b>$2,869</b><span>per golfer · 16 pax</span></div>
-      </div>
-
-      <figure class="hero-img">
-        <img src="images/dr-chavon.jpg" alt="Altos de Chavón village above the Chavón River" loading="lazy">
-        <figcaption><b>Altos de Chavón</b>The replica 16th-century village on the cliff — Dye Fore runs along this same gorge.</figcaption>
-      </figure>
-
-      <div class="alert green">
-        <span class="ico">🏆</span>
-        <div>
-          <b>This is the best golf on the page, and it isn't close.</b>
-          <p>Three Pete Dye courses on one property, headlined by a course ranked <b>#59 in the world</b> that
-          has been the Caribbean and Latin America's #1 for over fifty years. Nothing else here competes on
-          pure golf pedigree.</p>
-        </div>
-      </div>
-
-      <h4>The rounds</h4>
-      <div class="course">
-        <div class="day">Wed 24</div>
-        <div class="body">
-          <b>The Links</b>
-          <div class="arch">Pete Dye · 9:00 AM · caddies optional</div>
-          <p>Inland, Scottish-inspired, and the gentlest of the three — which is exactly why it's scheduled
-          first. Rolling terrain, lagoons and pot bunkers. A proper warm-up that still asks real questions,
-          and the one round where you can skip the caddie if you'd rather not.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.casadecampo.com.do/golf/golf-courses/the-links/" target="_blank" rel="noopener">Official site</a>
-            <a class="lnk" href="https://www.casadecampo.com.do/golf/golf-information/" target="_blank" rel="noopener">Rates &amp; caddie policy</a>
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="day">Thu 25</div>
-        <div class="body">
-          <b>Teeth of the Dog</b>
-          <div class="arch">Pete Dye, 1971 · 9:00 AM · <b>caddies mandatory</b></div>
-          <p><b>The reason to choose the Dominican Republic.</b> Pete Dye and a Dominican crew carved seven
-          holes directly out of the coral rock on the Caribbean shore — Dye called it the course "God
-          created and I built." 7,471 yards, par 72, and the run from the 5th through the 8th with the ocean
-          on your right is one of the great stretches in golf. Top 100 in the world in every ranking that
-          exists. Your group will still be talking about it in ten years.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.casadecampo.com.do/golf/golf-courses/teeth-of-the-dog/" target="_blank" rel="noopener">Official site &amp; photos</a>
-            <a class="lnk" href="https://www.top100golfcourses.com/golf-course/casa-de-campo-teeth-of-the-dog" target="_blank" rel="noopener">Top100 profile</a>
-            <a class="lnk" href="https://golf.com/courses/casa-de-campo-teeth-of-the-dog-golf-top-100-courses/" target="_blank" rel="noopener">GOLF Top 100 World</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/22127-casa-de-campo-teeth-of-the-dog" target="_blank" rel="noopener">Reviews</a>
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="day">Fri 26</div>
-        <div class="body">
-          <b>Dye Fore</b>
-          <div class="arch">Pete Dye · 9:30 AM · <b>caddies mandatory</b></div>
-          <p>The most photogenic. Seven holes run along a cliff edge some 300 feet above the Chavón River,
-          with the Altos de Chavón village and the marina in the distance. Wide fairways, but the drop-offs
-          are genuinely vertigo-inducing. A spectacular closing round.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.casadecampo.com.do/golf/golf-courses/dye-fore/" target="_blank" rel="noopener">Official site &amp; photos</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/22128-casa-de-campo-dye-fore" target="_blank" rel="noopener">Reviews</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="alert amber">
-        <span class="ico">💵</span>
-        <div>
-          <b>Budget for caddies — they're not in the quote.</b>
-          <p>Caddies are <b>compulsory</b> on Teeth of the Dog and Dye Fore. Expect roughly $25–30 in caddie
-          fee plus a customary $25–40 tip, per player, per round. Across the week that's realistically
-          <b>$150–250 per golfer on top of the $2,869</b>. Not a dealbreaker — but tell everyone up front and
-          bring small US bills.</p>
-        </div>
-      </div>
-
-      <h4>Where you stay</h4>
-      <div class="card">
-        <h3 style="font-size:1.05rem">Casa de Campo — Junior Suite, double occupancy, all-inclusive</h3>
-        <p style="color:var(--ink-2);font-size:.93rem">
-          A 7,000-acre gated estate, not a hotel — the courses, the marina, the beach, the shooting range and
-          the village are all on property, connected by golf cart. Every guest gets a cart, which for a group
-          of 16 turns the whole resort into your playground. Junior suites are big and recently refreshed.
-          The all-inclusive plan covers meals, drinks and most activities. This is a different category of
-          property from the Rius — genuine Forbes-rated luxury with a fifty-year golf legacy attached.
-        </p>
-        <div class="links">
-          <a class="lnk primary" href="https://www.casadecampo.com.do/" target="_blank" rel="noopener">Casa de Campo official</a>
-          <a class="lnk" href="https://www.casadecampo.com.do/experiences/all-inclusive/" target="_blank" rel="noopener">What the AI plan covers</a>
-          <a class="lnk" href="https://www.casadecampo.com.do/experiences/" target="_blank" rel="noopener">Experiences</a>
-          <a class="lnk" href="https://www.forbestravelguide.com/hotels/dominican-republic-caribbean/casa-de-campo-resort-villas" target="_blank" rel="noopener">Forbes Travel Guide</a>
-          <a class="lnk" href="https://www.tripadvisor.com/Hotel_Review-g147292-d149217-Reviews-Casa_de_Campo_Resort_Villas-La_Romana_La_Romana_Province_Dominican_Republic.html" target="_blank" rel="noopener">Tripadvisor</a>
-        </div>
-      </div>
-
-      <h4>The estate, off the course</h4>
-      <div class="gallery">
-        <figure>
-          <img src="images/dr-marina.jpg" alt="Marina Casa de Campo" loading="lazy">
-          <figcaption><b>The Marina</b>Best dining on the property; sportfishing fleet.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/dr-beach.jpg" alt="Beach at Casa de Campo" loading="lazy">
-          <figcaption><b>Minitas Beach</b>Private crescent with a beach club.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/dr-saona.jpg" alt="Saona Island beach" loading="lazy">
-          <figcaption><b>Saona Island</b>The classic catamaran day trip.</figcaption>
-        </figure>
-      </div>
-
-      <h4>When you're not playing</h4>
-      <div class="grid g3">
-        <div class="card">
-          <h3 style="font-size:1rem">🔫 The Shooting Center</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)"><b>The sleeper hit for golf groups.</b> 245 acres of
-          sporting clays, trap and skeet across more than 200 stations. Nothing else on this page produces
-          the same amount of trash talk. One round of 25 cartridges is typically included in the AI plan.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🏛 Altos de Chavón</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">A full-scale replica 16th-century Mediterranean
-          village on the cliff above the river, with cobblestone streets, artisan studios, galleries,
-          restaurants and a 5,000-seat Grecian amphitheatre. Genuinely worth the hour.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">⛵ Saona &amp; Catalina</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Catamaran day trips to two of the Caribbean's
-          postcard islands. Catalina has excellent diving and a wall drop-off; Saona is the classic
-          palm-and-sandbar beach day with a rum bar on the boat.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🎣 Marlin fishing</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">The Marina Casa de Campo fleet fishes blue marlin,
-          mahi and wahoo. The marina itself is the best dining precinct on the property — worth an evening
-          even if nobody fishes.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🏇 Polo &amp; horses</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Casa de Campo has a full equestrian centre and active
-          polo fields. Lessons, trail rides along the river, or just watch a chukka with a drink.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🏖 Minitas Beach</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">A private crescent with a beach club, snorkelling,
-          kayaks and paddleboards. Calm water, good food, and quiet — the recovery day after 54 holes.</p>
-        </div>
-      </div>
-
-      <div class="verdict">
-        <b>Verdict</b>
-        <p>If the group's answer to "why are we going" is <em>golf</em>, this is the trip. It's ~$600 more
-        per person than Cancún, plus caddies, plus the worst travel day of the four — a midnight red-eye
-        and a two-hour drive. What you get for that is Teeth of the Dog, which is a legitimately world-top-100
-        golf course, and a resort that has been built around golfers since 1971. The trade-off is that
-        Casa de Campo is a bubble: it's magnificent inside the gates and there is not much reason to leave
-        them. For a group that wants a big night out somewhere new, that's a genuine minus.</p>
-      </div>
-    </div>
-
-    <!-- ---------- CR ---------- -->
-    <div class="panel" id="p-cr" role="tabpanel" hidden>
-      <div class="dest-head">
-        <div>
-          <div class="loc">Guanacaste · Costa Rica · itinerary proposal</div>
-          <h3>Guanacaste — Tamarindo &amp; Conchal</h3>
-        </div>
-        <div class="dest-price"><b>$2,072</b><span>per person · 16 pax · Diria</span></div>
-      </div>
-
-      <figure class="hero-img">
-        <img src="images/cr-conchal.jpg" alt="Playa Conchal, Guanacaste" loading="lazy">
-        <figcaption><b>Playa Conchal</b>A beach made of crushed shells rather than sand — the Reserva Conchal course sits just behind it.</figcaption>
-      </figure>
-
-      <div class="alert green">
-        <span class="ico">✅</span>
-        <div>
-          <b>Two things this option does better than every other quote.</b>
-          <p>It's the <b>only fully refundable one</b> — cancel free up to 30 days out with a $250 deposit,
-          versus a 50%/75%/100% penalty ladder everywhere else. And it's the only itinerary with a
-          <b>real rest day</b> (Friday) plus an included sunset catamaran, which changes the rhythm of the
-          week for the better.</p>
-        </div>
-      </div>
-
-      <h4>The rounds</h4>
-      <div class="course">
-        <div class="day">Wed 24</div>
-        <div class="body">
-          <b>Hacienda Pinilla</b>
-          <div class="arch">Mike Young · 8:00 AM tee, 7:00 AM shuttle</div>
-          <p>7,274 yards of links-inspired golf through tropical dry forest near Tamarindo, with ocean views
-          and an Audubon sanctuary certification. Firm, fast and open — which means the wind is a full
-          partner in the round. Howler monkeys in the trees are standard.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.haciendapinilla.com/" target="_blank" rel="noopener">Official site</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/22114-hacienda-pinilla-golf-course" target="_blank" rel="noopener">Reviews</a>
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="day">Thu 25</div>
-        <div class="body">
-          <b>Reserva Conchal</b>
-          <div class="arch">Robert Trent Jones II · 8:00 AM</div>
-          <p>Par 72, 6,956 yards, widely called the best course in Central America and the first
-          Audubon-certified layout in Costa Rica. It climbs through dry forest to genuine ocean panoramas
-          near Playa Conchal — a beach made of crushed shells. Condé Nast has listed the resort among its
-          top golf properties, and it has hosted PGA Tour Americas.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.reservaconchal.com/golf/" target="_blank" rel="noopener">Official site &amp; photos</a>
-            <a class="lnk" href="https://www.golfpass.com/travel-advisor/courses/22112-reserva-conchal-golf-club" target="_blank" rel="noopener">Reviews</a>
-            <a class="lnk" href="https://www.visitcostarica.com/things-to-do/adventure/golf" target="_blank" rel="noopener">Costa Rica golf guide</a>
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="day">Sat 27</div>
-        <div class="body">
-          <b>Reserva Conchal <span style="color:var(--amber)">(repeat)</span></b>
-          <div class="arch">Robert Trent Jones II · 8:00 AM · catamaran 2–6 PM</div>
-          <p>You play Conchal a second time, then go straight to a sunset catamaran cruise. Playing a course
-          twice isn't a disaster — you'll score better the second time, and there's a case for finishing on
-          the best track in the region. But it is the weakest golf variety of the four options, and unlike
-          every other shortcoming on this page, <b>this one can't be negotiated away.</b></p>
-        </div>
-      </div>
-
-      <div class="alert amber">
-        <span class="ico">⛳</span>
-        <div>
-          <b>Why the repeat is structural, not sloppy quoting.</b>
-          <p>
-            Guanacaste has exactly <b>three championship courses</b>: Hacienda Pinilla, Reserva Conchal, and
-            the Arnold Palmer <b>Ocean Course at Peninsula Papagayo</b>. The third is the problem —
-            play there is <b>restricted to guests staying on the Papagayo peninsula</b> (Four Seasons or
-            Andaz), with proof of stay required. Booking from Tamarindo Diria or the Westin doesn't get you
-            on. So a three-round Guanacaste package staying anywhere else has only <b>two</b> courses
-            available, and one of them has to repeat. Asking the agent to swap in a third distinct course
-            won't work — the courses don't exist. It's the price of the destination, and it's worth knowing
-            before you compare this against Cancún's three or Casa de Campo's three.
-          </p>
-        </div>
-      </div>
-
-      <div class="alert amber">
-        <span class="ico">📄</span>
-        <div>
-          <b>One thing to confirm in writing anyway.</b>
-          <p>
-            The itinerary's overview line names Reserva Conchal for Feb 27, but the <em>detailed daily
-            schedule</em> table for that day just says "Golf &amp; Catamaran, Tee Time 8:00 AM" and never
-            names a course. Given the access situation above it's almost certainly Conchal again — but get
-            it stated explicitly so nobody arrives expecting something new.
-          </p>
-        </div>
-      </div>
-
-      <h4>Where you stay — two very different weeks</h4>
-      <div class="grid g2">
-        <div class="card">
-          <h3 style="font-size:1.05rem">Tamarindo Diria · $2,072 <span class="pill g">value pick</span></h3>
-          <p style="color:var(--ink-2);font-size:.93rem">Ocean View Suites directly on Tamarindo Beach, with
-          the town's restaurants, surf bars and nightlife a short walk from the lobby. This is the social
-          option — you're in a living beach town, not a compound. Includes 3 rounds, lodging, private
-          transfers and the catamaran.</p>
-          <p style="color:var(--amber);font-size:.88rem"><b>Confirm before booking:</b> the proposal doesn't
-          state whether this rate includes meals and drinks. If it's room-only, add $100–150 per person per
-          day and the price advantage disappears entirely.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://tamarindodiria.com/" target="_blank" rel="noopener">Hotel official site</a>
-            <a class="lnk" href="https://www.tripadvisor.com/Hotel_Review-g309253-d293489-Reviews-Tamarindo_Diria_Beach_Resort-Tamarindo_Province_of_Guanacaste.html" target="_blank" rel="noopener">Tripadvisor</a>
-          </div>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1.05rem">Westin Reserva Conchal · $2,816 <span class="pill a">+$744</span></h3>
-          <p style="color:var(--ink-2);font-size:.93rem">Westin Club rooms in the adults-only section,
-          all-inclusive luxury, with butler service, a private club lounge and premium spirits.
-          <b>You can walk from your room to the first tee at Reserva Conchal</b> — which, given you play it
-          twice, is a real convenience. Quieter, more refined, and a 20-minute drive from any nightlife.</p>
-          <div class="links">
-            <a class="lnk primary" href="https://www.marriott.com/en-us/hotels/lirwi-the-westin-reserva-conchal-an-all-inclusive-golf-resort-and-spa/overview/" target="_blank" rel="noopener">Marriott official</a>
-            <a class="lnk" href="https://www.marriott.com/en-us/hotels/lirwi-the-westin-reserva-conchal-an-all-inclusive-golf-resort-and-spa/photos/" target="_blank" rel="noopener">Photo gallery</a>
-            <a class="lnk" href="https://www.marriott.com/en-us/hotels/lirwi-the-westin-reserva-conchal-an-all-inclusive-golf-resort-and-spa/rooms/" target="_blank" rel="noopener">Rooms &amp; suites</a>
-            <a class="lnk" href="https://www.reservaconchal.com/" target="_blank" rel="noopener">Reserva Conchal</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="alert red">
-        <span class="ico">💨</span>
-        <div>
-          <b>The Papagayo winds are the risk you have to price in.</b>
-          <p>Guanacaste in late February is spectacular for weather — essentially zero rain, 30–35°C, endless
-          sun. It is also the heart of the <b>Papagayo wind season</b>, when offshore gusts routinely hit
-          30–50 mph on the Pacific coast. On exposed, links-style courses like Hacienda Pinilla and Conchal
-          that isn't a breeze, it's a different game. Some groups love it. A group of mid-handicappers
-          shooting 20 over their handicap for three straight days will not.</p>
-        </div>
-      </div>
-
-      <h4>Guanacaste, off the course</h4>
-      <div class="gallery">
-        <figure>
-          <img src="images/cr-rincon.jpg" alt="Rincón de la Vieja volcano" loading="lazy">
-          <figcaption><b>Rincón de la Vieja</b>Zip-lines, mud baths and hot springs.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cr-tamarindo.jpg" alt="Tamarindo beach at sunset" loading="lazy">
-          <figcaption><b>Tamarindo</b>Surf town, bars and the Diria's doorstep.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/cr-flamingo.jpg" alt="Playa Flamingo, Guanacaste" loading="lazy">
-          <figcaption><b>Playa Flamingo</b>White sand, and the charter fishing base.</figcaption>
-        </figure>
-      </div>
-
-      <h4>When you're not playing</h4>
-      <div class="grid g3">
-        <div class="card">
-          <h3 style="font-size:1rem">🌋 Hacienda Guachipelín</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)"><b>The best single non-golf day on this entire page.</b>
-          At the base of Rincón de la Vieja volcano: canopy zip-lines, horseback riding, volcanic mud baths
-          and natural thermal hot springs, all in one adventure-park day. Perfect use of Friday's open slot.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">⛵ Sunset catamaran</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)"><b>Already included</b>, Saturday 2–6 PM. Open bar,
-          snorkel stop, and the Pacific sunset off Tamarindo as the finale to the week. No other quote
-          bundles an activity like this.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🏖 Playa Conchal &amp; Flamingo</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Conchal's beach is made of billions of crushed shells
-          rather than sand — genuinely unusual. Flamingo next door is white sand and calm water, and the
-          base for most boat charters.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🎣 Roosterfish &amp; sails</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Guanacaste is one of the great sportfishing coasts on
-          earth and February is prime — sailfish, marlin, and the roosterfish this coast is famous for.
-          Charters leave from Flamingo and Tamarindo.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🐒 Wildlife</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Palo Verde and the Tempisque River boat safaris put
-          howler monkeys, crocodiles, iguanas and scarlet macaws within a couple of metres. Costa Rica's
-          real differentiator versus the other three.</p>
-        </div>
-        <div class="card">
-          <h3 style="font-size:1rem">🏄 Tamarindo town</h3>
-          <p style="font-size:.9rem;color:var(--ink-2)">Surf lessons in the morning, ceviche and cold Imperial
-          in the afternoon, and a bar scene that goes late. If you stay at the Diria it's all on your
-          doorstep.</p>
-        </div>
-      </div>
-
-      <div class="verdict">
-        <b>Verdict</b>
-        <p>The best-designed <em>itinerary</em> of the four — a rest day, a catamaran, an adventure day, and
-        the only cancellation policy that doesn't punish a group whose numbers shift. At $2,072 it's also
-        the cheapest, and it has the cheapest flight. What holds it back is the golf, and the ceiling is
-        fixed: the region only has two courses you can actually book from these hotels, so one gets played
-        twice — on a coast where late-February wind can genuinely ruin the scoring. If the group's priority
-        is a great week at the best price, this wins. If it's 54 holes of varied golf, it can't get there
-        no matter how the package is rewritten. Get the meal plan clarified and it's very hard to beat on
-        value.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =================== COST =================== -->
-<section id="cost">
-  <div class="wrap">
-    <h2><span class="num">05 — The real number</span>What it actually costs</h2>
-    <p class="sub">
-      The quoted price is land-only. Add flights, caddies, tips, a charter and a few nights of extras and
-      the gaps between these options change shape. Adjust the assumptions below to see your own landed cost.
-    </p>
-
-    <div class="calc">
-      <div class="calc-row">
-        <div>
-          <label for="pkg">Package</label>
-          <select id="pkg">
-            <option value="cun|2259|0">Cancún — Riu Palace México, Jr Suite</option>
-            <option value="cun|2559|0">Cancún — Elite Club upgrade</option>
-            <option value="pvr|2389|0">Puerto Vallarta — Riu Pacífico, partial sea view</option>
-            <option value="pvr|2859|0">Puerto Vallarta — Ocean View Elite Club</option>
-            <option value="dr|2869|200">Dominican Republic — Casa de Campo</option>
-            <option value="cr|2072|0">Costa Rica — Tamarindo Diria</option>
-            <option value="cr|2816|0">Costa Rica — Westin Reserva Conchal</option>
-          </select>
-        </div>
-        <div>
-          <label for="org">Flying from</label>
-          <select id="org">
-            <option value="yyc">Calgary (YYC)</option>
-            <option value="yyz">Toronto (YYZ)</option>
-            <option value="iah">Houston (IAH/HOU)</option>
-          </select>
-        </div>
-        <div>
-          <label for="grp">Group size</label>
-          <input type="range" id="grp" min="8" max="24" value="16" step="1">
-          <output id="grpOut">16</output>
-        </div>
-        <div>
-          <label for="spend">Personal spend / day (USD)</label>
-          <input type="range" id="spend" min="0" max="200" value="60" step="10">
-          <output id="spendOut">$60</output>
-        </div>
-      </div>
-
-      <div class="calc-row" style="gap:26px">
-        <label class="ck"><input type="checkbox" id="cad" checked> Include caddies &amp; tips where required</label>
-        <label class="ck"><input type="checkbox" id="chart"> Add a group fishing/catamaran charter (~$1,600 split)</label>
-        <label class="ck"><input type="checkbox" id="ins"> Add trip insurance (~7% of package)</label>
-        <label class="ck"><input type="checkbox" id="ccad"> <b>Show everything in CAD</b></label>
-      </div>
-
-      <div class="tscroll" style="margin-top:8px">
-        <table id="calcTable" style="min-width:520px">
-          <thead><tr><th>Line item</th><th style="text-align:right" id="hdPer">Per golfer (USD)</th><th style="text-align:right">Group total</th></tr></thead>
-          <tbody id="calcBody"></tbody>
-        </table>
-      </div>
-      <p style="font-size:.82rem;color:var(--ink-3);margin:14px 0 0">
-        Flights use the <b>February averages for the departure city you select</b> — Calgary and Toronto in
-        CAD, Houston in USD — converted at <b>1 USD = 1.4016 CAD</b> (Aug 7, 2026). Package prices are USD as
-        quoted. Toronto's Dominican figure uses the <b>La Romana</b> nonstop; Calgary and Houston use Punta
-        Cana plus the drive. February is peak season from both Canadian cities and off-peak from Houston, so
-        these are planning numbers rather than the fare you'll be quoted.
-      </p>
-    </div>
-
-    <div class="alert green" style="margin-top:22px">
-      <span class="ico">📉</span>
-      <div>
-        <b>The headline finding: real airfare <em>widens</em> the gaps rather than closing them.</b>
-        <p>
-          With published February fares plugged in — 16 golfers, C$84/day personal spend — the landed cost
-          per golfer works out at roughly <b>C$4,028 for Costa Rica (Diria)</b>, <b>C$4,415 for Cancún</b>,
-          <b>C$4,666 for Puerto Vallarta</b> and <b>C$6,260 for Casa de Campo</b>. Costa Rica keeps its
-          value crown because Liberia is the <em>cheapest</em> flight of the four, not the most expensive.
-          And the Dominican gap gets bigger, not smaller: <b>C$1,845 more per golfer than Cancún — about
-          C$29,500 across a group of 16</b>. That is the real price of Teeth of the Dog, and it's the number
-          to put in front of the group.
-        </p>
-      </div>
-    </div>
-
-    <div class="tscroll" style="margin-top:16px">
-      <table>
-        <thead>
-          <tr><th>Landed cost per golfer</th><th style="text-align:right">USD</th><th style="text-align:right">CAD</th><th style="text-align:right">Group of 16 (CAD)</th><th style="text-align:right">vs cheapest</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><b>Costa Rica</b> — Tamarindo Diria</td><td style="text-align:right">$2,874</td><td style="text-align:right"><span class="price best">C$4,028</span></td><td style="text-align:right">C$64,442</td><td style="text-align:right" class="best">—</td></tr>
-          <tr><td><b>Cancún</b> — Riu Palace México</td><td style="text-align:right">$3,150</td><td style="text-align:right"><span class="price">C$4,415</span></td><td style="text-align:right">C$70,635</td><td style="text-align:right">+C$387</td></tr>
-          <tr><td><b>Puerto Vallarta</b> — Riu Pacífico</td><td style="text-align:right">$3,329</td><td style="text-align:right"><span class="price">C$4,666</span></td><td style="text-align:right">C$74,654</td><td style="text-align:right">+C$638</td></tr>
-          <tr><td><b>Cancún</b> — Elite Club</td><td style="text-align:right">$3,450</td><td style="text-align:right"><span class="price">C$4,835</span></td><td style="text-align:right">C$77,363</td><td style="text-align:right">+C$808</td></tr>
-          <tr><td><b>Costa Rica</b> — Westin Reserva Conchal</td><td style="text-align:right">$3,618</td><td style="text-align:right"><span class="price">C$5,070</span></td><td style="text-align:right">C$81,126</td><td style="text-align:right">+C$1,043</td></tr>
-          <tr><td><b>Puerto Vallarta</b> — Elite Club</td><td style="text-align:right">$3,799</td><td style="text-align:right"><span class="price">C$5,325</span></td><td style="text-align:right">C$85,194</td><td style="text-align:right">+C$1,297</td></tr>
-          <tr><td><b>Dominican Republic</b> — Casa de Campo</td><td style="text-align:right">$4,466</td><td style="text-align:right"><span class="price worst">C$6,260</span></td><td style="text-align:right">C$100,160</td><td style="text-align:right" class="worst">+C$2,232</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="font-size:.82rem;color:var(--ink-3);margin:12px 0 0">
-      Includes land package, February average airfare, mandatory caddies where applicable, and US$60/day
-      personal spend. Excludes charters, insurance and SUV rental.
-    </p>
-
-    <h3>Hidden costs, ranked by how much they'll surprise you</h3>
-    <ul class="clean">
-      <li><b>Casa de Campo caddies — $150–250 pp.</b> Mandatory on two of three rounds. The single biggest
-      unlisted cost on this page.</li>
-      <li><b>Tamarindo Diria meal plan — up to $750 pp.</b> If that rate is room-only, five days of food and
-      drink for 16 people is a five-figure line item that isn't in the proposal. <b>Ask today.</b></li>
-      <li><b>Costa Rica SUV rentals.</b> The proposal recommends two large SUVs to make the open day work —
-      roughly $600–900 for a few days, split across the group, plus fuel and Costa Rica's mandatory
-      liability insurance which is charged separately and always surprises people.</li>
-      <li><b>Golf bag fees.</b> Free within weight limits on WestJet and Air Canada; charged on Flair. Sixteen
-      sets adds up fast on a "cheap" fare.</li>
-      <li><b>Group size re-pricing.</b> Mexico was quoted at 12, DR and Costa Rica at 16. Per-person cost on
-      the Mexico quotes will likely <em>drop</em> at 16 — get both re-quoted at your actual number before
-      comparing.</li>
-      <li><b>Tips and cart fees.</b> Budget $20–30 per round for forecaddies and bag staff in Mexico and
-      Costa Rica even where not required.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- =================== SCORECARD =================== -->
-<section id="scorecard">
-  <div class="wrap">
-    <h2><span class="num">06 — Scorecard</span>How they stack up</h2>
-    <p class="sub">Subjective, but honest. Ten is the best available across these four options, not in the world.</p>
-
-    <div class="grid g4">
-      <div class="card">
-        <h3>Cancún</h3>
-        <div class="scores">
-          <div class="score"><span class="lab">Golf</span><span class="bar"><i style="width:80%"></i></span><span class="val">8</span></div>
-          <div class="score"><span class="lab">Flights</span><span class="bar"><i style="width:100%"></i></span><span class="val">10</span></div>
-          <div class="score"><span class="lab">Lodging</span><span class="bar"><i style="width:70%"></i></span><span class="val">7</span></div>
-          <div class="score"><span class="lab">Off-course</span><span class="bar"><i style="width:100%"></i></span><span class="val">10</span></div>
-          <div class="score"><span class="lab">Value</span><span class="bar"><i style="width:90%"></i></span><span class="val">9</span></div>
-          <div class="score"><span class="lab">Flexibility</span><span class="bar"><i style="width:60%"></i></span><span class="val">6</span></div>
-        </div>
-        <p style="font-family:var(--serif);font-size:1.5rem;color:var(--gold);margin:18px 0 0">50<span style="font-size:.9rem;color:var(--ink-3)">/60</span></p>
-      </div>
-
-      <div class="card">
-        <h3>Puerto Vallarta</h3>
-        <div class="scores">
-          <div class="score"><span class="lab">Golf</span><span class="bar"><i style="width:70%"></i></span><span class="val">7</span></div>
-          <div class="score"><span class="lab">Flights</span><span class="bar"><i style="width:100%"></i></span><span class="val">10</span></div>
-          <div class="score"><span class="lab">Lodging</span><span class="bar"><i style="width:70%"></i></span><span class="val">7</span></div>
-          <div class="score"><span class="lab">Off-course</span><span class="bar"><i style="width:90%"></i></span><span class="val">9</span></div>
-          <div class="score"><span class="lab">Value</span><span class="bar"><i style="width:70%"></i></span><span class="val">7</span></div>
-          <div class="score"><span class="lab">Flexibility</span><span class="bar"><i style="width:60%"></i></span><span class="val">6</span></div>
-        </div>
-        <p style="font-family:var(--serif);font-size:1.5rem;color:var(--gold);margin:18px 0 0">46<span style="font-size:.9rem;color:var(--ink-3)">/60</span></p>
-      </div>
-
-      <div class="card hi">
-        <h3>Dominican Republic</h3>
-        <div class="scores">
-          <div class="score"><span class="lab">Golf</span><span class="bar"><i style="width:100%"></i></span><span class="val">10</span></div>
-          <div class="score"><span class="lab">Flights</span><span class="bar"><i style="width:40%"></i></span><span class="val">4</span></div>
-          <div class="score"><span class="lab">Lodging</span><span class="bar"><i style="width:100%"></i></span><span class="val">10</span></div>
-          <div class="score"><span class="lab">Off-course</span><span class="bar"><i style="width:70%"></i></span><span class="val">7</span></div>
-          <div class="score"><span class="lab">Value</span><span class="bar"><i style="width:50%"></i></span><span class="val">5</span></div>
-          <div class="score"><span class="lab">Flexibility</span><span class="bar"><i style="width:60%"></i></span><span class="val">6</span></div>
-        </div>
-        <p style="font-family:var(--serif);font-size:1.5rem;color:var(--gold);margin:18px 0 0">42<span style="font-size:.9rem;color:var(--ink-3)">/60</span></p>
-      </div>
-
-      <div class="card">
-        <h3>Costa Rica</h3>
-        <div class="scores">
-          <div class="score"><span class="lab">Golf</span><span class="bar"><i style="width:60%"></i></span><span class="val">6</span></div>
-          <div class="score"><span class="lab">Flights</span><span class="bar"><i style="width:40%"></i></span><span class="val">4</span></div>
-          <div class="score"><span class="lab">Lodging</span><span class="bar"><i style="width:70%"></i></span><span class="val">7</span></div>
-          <div class="score"><span class="lab">Off-course</span><span class="bar"><i style="width:90%"></i></span><span class="val">9</span></div>
-          <div class="score"><span class="lab">Value</span><span class="bar"><i style="width:100%"></i></span><span class="val">10</span></div>
-          <div class="score"><span class="lab">Flexibility</span><span class="bar"><i style="width:100%"></i></span><span class="val">10</span></div>
-        </div>
-        <p style="font-family:var(--serif);font-size:1.5rem;color:var(--gold);margin:18px 0 0">46<span style="font-size:.9rem;color:var(--ink-3)">/60</span></p>
-      </div>
-    </div>
-
-    <p style="color:var(--ink-3);font-size:.88rem;margin-top:20px">
-      The totals are close on purpose — these are all good trips. The score only tells you what each one
-      optimises for. Cancún wins by being weak at nothing. The DR wins the category that might matter most.
-    </p>
-  </div>
-</section>
-
-<!-- =================== ACTION =================== -->
-<section id="action">
-  <div class="wrap">
-    <h2><span class="num">07 — Next steps</span>What to do this week</h2>
-    <p class="sub">In order. The first two are time-sensitive.</p>
-
-    <div class="rank">
-      <div class="n">01</div>
-      <div>
-        <h3>Re-validate all four quotes — today</h3>
-        <p>Cancún and Puerto Vallarta expired July 26. The DR quote dies August 9. Email Mariana Recines
-        (<a href="mailto:mrecines@golfinmexico.net">mrecines@golfinmexico.net</a>) and Diego Castellanos
-        (<a href="mailto:diego@golfinmexico.net">diego@golfinmexico.net</a>) and ask for all three Best4Golf
-        quotes re-issued at your <b>actual headcount</b>, with the Mexico pair repriced at 16 rather than 12.</p>
-      </div>
-    </div>
-    <div class="rank">
-      <div class="n">02</div>
-      <div>
-        <h3>Lock the headcount</h3>
-        <p>You have quotes at two different group sizes, which makes the comparison unfair to Mexico.
-        Twelve versus sixteen changes per-person pricing, van sizes, and whether you get a private tee-time
-        block. Get a firm number before anything else.</p>
-      </div>
-    </div>
-    <div class="rank">
-      <div class="n">03</div>
-      <div>
-        <h3>Check that Tuesday flight actually exists</h3>
-        <p>Pull up Feb 23, 2027 on WestJet for LIR and PUJ specifically. If there's no Tuesday nonstop, those
-        two itineraries need reshaping — and that may resolve the decision for you.</p>
-      </div>
-    </div>
-    <div class="rank">
-      <div class="n">04</div>
-      <div>
-        <h3>Ask the three questions that change the ranking</h3>
-        <p>(a) Does the Tamarindo Diria rate include meals and drinks? (b) What is Casa de Campo's all-in
-        caddie cost per player per round, in writing? (c) Confirm which course Costa Rica plays on Feb 27 —
-        the detail table never names it. Note that (c) is a confirmation, not a negotiation: with only two
-        bookable courses in Guanacaste, a repeat is unavoidable there. Either of the first two could move a
-        destination up or down a full tier.</p>
-      </div>
-    </div>
-    <div class="rank">
-      <div class="n">05</div>
-      <div>
-        <h3>Take a straw poll on one question</h3>
-        <p>Not "where do you want to go" — you'll get four answers. Ask instead: <b>"Would you pay $600 more
-        and take a red-eye to play a top-100 course in the world?"</b> If the group says yes, book the
-        Dominican. If it hesitates, book Cancún. That's genuinely the whole decision.</p>
-      </div>
-    </div>
-    <div class="rank">
-      <div class="n">06</div>
-      <div>
-        <h3>Then move fast on flights — and count the cities first</h3>
-        <p>February is peak season out of both Calgary and Toronto (though not Houston), and 12–16 seats on
-        the same aircraft is not a small ask. Get a head count <b>by departure city</b> before you decide:
-        if a real share is coming from Toronto, the Dominican Republic's biggest drawback disappears —
-        they land at La Romana, ten minutes from the resort, and the premium over Cancún drops from about
-        C$1,845 a head (Calgary) to roughly C$1,150. Once the destination is settled, book the air before
-        the land deposit clears; the flight is the constraint, not the hotel.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="wrap">
+
+<h2>The three packages on the table</h2>
+<p>All three are the same resort, same dates, same golf. The only variable is the room. Prices are per person, land-only — flights are not included.</p>
+
+<table>
+  <caption>Group package options, Riu Palace México, 23–28 Feb 2027</caption>
+  <thead>
+    <tr><th>Room type</th><th class="num">Per person</th><th class="num">Group total</th><th class="num">vs. base</th></tr>
+  </thead>
+  <tbody>
+    <tr class="pick">
+      <td>Junior Suite <span class="tag">base</span></td>
+      <td class="num">$2,259</td><td class="num">$27,108</td><td class="num">—</td>
+    </tr>
+    <tr>
+      <td>Junior Suite, Courtyard View</td>
+      <td class="num">$2,269</td><td class="num">$27,228</td><td class="num">+$10 pp</td>
+    </tr>
+    <tr>
+      <td>Junior Suite, Swim-up Elite Club</td>
+      <td class="num">$2,679</td><td class="num">$32,148</td><td class="num">+$420 pp</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="note">Courtyard View is a $10 difference — effectively a coin flip, not a decision. The real question is whether Swim-up Elite is worth $5,040 across the group.</p>
+
+<h3>What the package covers</h3>
+<ul>
+  <li>Five nights, all-inclusive, two to a Junior Suite (six suites).</li>
+  <li><strong>Wed 24 Feb</strong> — Hard Rock (Robert von Hagge), 9:00am, food and drinks on course.</li>
+  <li><strong>Thu 25 Feb</strong> — Iberostar Playa Paraíso (P.B. Dye), 9:00am, food, drinks and shared transport.</li>
+  <li><strong>Fri 26 Feb</strong> — El Camaleón at Mayakoba (Greg Norman), 9:00am, shared transport.</li>
+  <li>Airport transfers both ways by 12-seat Hiace van — pickup Tue 23 Feb at 12:00pm, dropoff Sun 28 Feb at 12:00pm.</li>
+</ul>
+<p class="note">Note that the Hard Rock day lists food and drinks but no transport, unlike the other two rounds. Worth confirming with Mariana whether transfers are included or whether we are arranging our own that morning.</p>
+
+<h2>Flights — the number that actually decides your total</h2>
+<p>February 2027 schedules are not fully loaded yet, so nobody can quote you a real fare today. What follows are the typical February round-trip ranges on each route, which is the right basis for budgeting. Book when schedules open, roughly 10–11 months out.</p>
+
+<table>
+  <caption>Estimated round-trip economy fares to Cancún (CUN), late February</caption>
+  <thead>
+    <tr><th>From</th><th>Nonstop?</th><th class="num">Typical round trip</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Calgary (YYC)</td><td>Yes — WestJet, Flair, Air Canada</td>
+      <td class="num">CAD 580–750<br><span class="note">≈ USD 420–540</span></td>
+      <td>About 5h45 nonstop. February is the <em>most expensive</em> month on this route, so book early.</td>
+    </tr>
+    <tr>
+      <td>Toronto (YYZ)</td><td>Yes — Flair, WestJet, Air Transat, Air Canada</td>
+      <td class="num">USD 230–420</td>
+      <td>Cheapest Canadian origin. Roughly 4h30 nonstop. February is the low month here.</td>
+    </tr>
+    <tr>
+      <td>Houston (IAH / HOU)</td><td>Yes — United, Southwest, American</td>
+      <td class="num">USD 300–450</td>
+      <td>Shortest flight of the four at about 2h20. February is historically the cheapest month IAH–CUN.</td>
+    </tr>
+    <tr>
+      <td>San Francisco (SFO)</td><td>Yes on United; most options connect</td>
+      <td class="num">USD 500–700</td>
+      <td>The priciest origin. Nonstop is worth paying up for — connecting itineraries run 8–14 hours.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Landed cost per person</h3>
+<p>Package plus a mid-range flight estimate, in USD, so everyone can see what they are actually committing to.</p>
+
+<table>
+  <thead>
+    <tr><th>From</th><th class="num">Junior Suite</th><th class="num">Swim-up Elite</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Toronto</td><td class="num">≈ $2,580</td><td class="num">≈ $3,000</td></tr>
+    <tr><td>Houston</td><td class="num">≈ $2,640</td><td class="num">≈ $3,060</td></tr>
+    <tr><td>Calgary</td><td class="num">≈ $2,740</td><td class="num">≈ $3,160</td></tr>
+    <tr><td>San Francisco</td><td class="num">≈ $2,860</td><td class="num">≈ $3,280</td></tr>
+  </tbody>
+</table>
+<p class="note">Excludes caddies, tips, club rental, spa, anything off-resort, and travel insurance.</p>
+
+<h2>Which suite is worth the money</h2>
+
+<h3>What you get for each</h3>
+<ul>
+  <li><strong>Junior Suite</strong> — around 430 sq ft, separate sitting area, balcony, king or two doubles. The standard room at every Riu Palace; it is not a downgrade of anything.</li>
+  <li><strong>Courtyard View</strong> — the same room looking inward instead of at the garden. Ten dollars.</li>
+  <li><strong>Swim-up Elite Club</strong> — ground floor, terrace opening onto a shared shallow pool, plus Elite Club membership: reserved beach cabanas, à la carte breakfast, priority restaurant reservations, a lounge.</li>
+</ul>
+
+<h3>What travellers consistently say</h3>
+<p>Traveller forums and review threads are remarkably consistent on swim-up rooms across Riu and comparable all-inclusives, and the themes cut against the upgrade for a group like ours:</p>
+<ul>
+  <li><strong>No privacy.</strong> A long-running traveller thread on swim-up suites in this region makes the point plainly: the terrace sits a few feet from the pool edge, anyone in the water can see the patio, and they can see into the room if the curtains are open.</li>
+  <li><strong>Damp rooms.</strong> The same discussion flags that swim-up rooms sit against the water and can smell musty.</li>
+  <li><strong>The reliable win is loungers, not the pool.</strong> The consistent positive is never having to fight for a chair — your own loungers are outside the door.</li>
+  <li><strong>Elite Club, separately, gets good reviews.</strong> A detailed Riu Elite Club write-up from a guest who researched the same question concluded the beach cabana access alone made it worth paying for, with faster drink service and better restaurant tables; the lounge itself went unused.</li>
+</ul>
+<p class="note">Reddit threads specific to Riu Palace México and its swim-up category are thin — the sentiment above comes from traveller forums and Riu Elite Club reviews rather than one Reddit post, so treat it as the general consensus on the room type rather than a verdict on this exact property.</p>
+
+<div class="verdict">
+  <h3>Recommendation: Junior Suite for everyone, with Elite Club as an individual opt-in</h3>
+  <p>We are tee-ing off at 9:00am three days out of five. The private pool is a feature you use in the late afternoon, at a resort that already has four pools and a beach. Paying $420 a head — $5,040 across the group — for a ground-floor terrace onto a shared pool is the weakest value per dollar in the quote.</p>
+  <p>The part of the upgrade that genuinely earns its keep is Elite Club: cabanas, better breakfast, priority reservations. If a few guys want that, ask Mariana whether Elite Club is available on a standard Junior Suite without the swim-up, and whether individuals can upgrade rather than the whole block. That is the question to put to her before we vote.</p>
+  <p><strong>Courtyard View at +$10:</strong> take it or leave it. Ask which one actually gets us six adjacent suites — keeping the group on one corridor is worth more than the view.</p>
+</div>
+
+<div class="flagbox">
+  <h3>Four things to check before we commit</h3>
+  <ul>
+    <li><strong>The resort is not in Riviera Cancun.</strong> Riu Palace México is in Playacar, Playa del Carmen — around 50 minutes south of Cancún airport. Fine for golf (all three courses are close), but the quote title is misleading and it changes transfer time.</li>
+    <li><strong>The 12:00pm transfer times are fixed in the quote.</strong> Everyone's flights need to land in a window that works for one van, or we pay for a second. Worth collecting arrival times before anyone books.</li>
+    <li><strong>Pricing expires 26 July 2026.</strong> That has passed. Get the quote re-issued before we circulate numbers for a vote.</li>
+    <li><strong>Cancellation tightens fast.</strong> Deposit-only penalty up to 60 days out; 50% at 59–45 days; 75% at 44–15 days; 100% inside 14 days. Golf alone is refundable up to 72 hours before play, less $25 per player. With twelve people, one or two will drop — decide now whether we buy insurance or self-insure.</li>
+  </ul>
+</div>
+
+<h2>What we need from the group</h2>
+<ul>
+  <li>Confirm you are in, and from which city you are flying.</li>
+  <li>Vote: Junior Suite for all, or everyone in Swim-up Elite.</li>
+  <li>Say whether you would personally pay for Elite Club if it can be bought separately.</li>
+  <li>Send your rough arrival time on Tue 23 Feb so we can size the transfer.</li>
+</ul>
 
 <footer>
-  <div class="wrap">
-    <p><b>Sources.</b> Package details are taken directly from the Best4Golf / Golf in Mexico quotes
-    (#5128 Cancún, #5126 Puerto Vallarta, Dominican Republic quote dated Aug 4, 2026) and the Costa Rica
-    itinerary proposal. Flight schedules from FlightConnections, FlightsFrom and WestJet's winter 2026/27
-    route announcement. Course, resort and weather detail from the operators' own sites plus Golf Digest,
-    GOLF Magazine Top 100, Golfweek and Top100GolfCourses.</p>
-    <p><b>Caveats.</b> All prices in USD as quoted, land-only, excluding airfare. Flight cost figures in the
-    calculator are estimates only. Airline schedules for February 2027 are not final and are subject to
-    change — verify every route directly with the carrier before booking. Three of four quotes have passed
-    or are passing their stated validity date.</p>
-    <p><b>Photography.</b> Location images are Creative Commons / public domain via Wikimedia Commons,
-    served from <code>images/</code> and credited below. No course or resort photography is reproduced here —
-    for those, use the "Official site &amp; photos" links on each course and hotel above.</p>
-    <p style="font-size:.78rem;line-height:1.75;margin-top:10px"><a href="https://commons.wikimedia.org/wiki/File:Ruins_of_Tulum,_QR.jpg" target="_blank" rel="noopener">Tulum</a> — Erik Cleves Kristensen, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa-del-carmen-beach.jpg" target="_blank" rel="noopener">Playa del Carmen</a> — Scott S Bateman, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Palancar_reef.jpg" target="_blank" rel="noopener">Palancar Reef</a> — Johnnie Flashlite, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Chichen_Itza_1.jpg" target="_blank" rel="noopener">Chichén Itzá</a> — Daniel Schwen, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Mayakoba_-_panoramio.jpg" target="_blank" rel="noopener">Mayakoba</a> — Alfonzo Buscemi, CC BY 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Malec%C3%B3n,_Puerto_Vallarta,_February_2023.jpg" target="_blank" rel="noopener">PV Malecón</a> — Another Believer, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Puerto_Vallarta_-_humpback_whale.jpg" target="_blank" rel="noopener">Humpback whale</a> — TerryDOtt, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Las_Marietas_Island,_Mexico.jpg" target="_blank" rel="noopener">Islas Marietas</a> — Unknown, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Nuevo_Vallarta_atardecer.jpg" target="_blank" rel="noopener">Nuevo Vallarta</a> — Netzaa, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Altos_de_Chavon_1.jpg" target="_blank" rel="noopener">Altos de Chavón</a> — Andreas Volkmer, Public domain · <a href="https://commons.wikimedia.org/wiki/File:Beach_in_Casa_De_Campo,_Dominican_Republic_(51908230116).jpg" target="_blank" rel="noopener">Casa de Campo beach</a> — Sergiy Galyonkin from Raleigh, USA, CC BY-SA 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Marina_in_Casa_De_Campo,_Dominican_Republic_(51907257727).jpg" target="_blank" rel="noopener">Casa de Campo marina</a> — Sergiy Galyonkin from Raleigh, USA, CC BY-SA 2.0 · <a href="https://commons.wikimedia.org/wiki/File:2023_-_Saona_Island_-_24.jpg" target="_blank" rel="noopener">Saona Island</a> — Oleg Yunakov, CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa_Conchal_sand.jpg" target="_blank" rel="noopener">Playa Conchal</a> — Haakon S. Krohn, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Tamarindo_beach-Guanacaste-Costa_Rica.jpg" target="_blank" rel="noopener">Tamarindo</a> — Jarle Naustvik, CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:Rincon_de_la_Vieja.JPG" target="_blank" rel="noopener">Rincón de la Vieja</a> — Kobold66, CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Playa_Flamingo.jpg" target="_blank" rel="noopener">Playa Flamingo</a> — Haakon S. Krohn, CC BY-SA 3.0</p>
-    <p style="margin-top:20px;color:var(--ink-3)">Prepared for the February 2027 golf trip · Calgary, Toronto &amp; Houston ·
-    last updated August 2026</p>
-
-    <div class="counter" id="viewCounter" hidden>
-      <span class="pulse" aria-hidden="true"></span>
-      <span><b id="viewCount">—</b> page views</span>
-    </div>
-  </div>
+  <p>Quote 5195, Best4Golf — Mariana Recines, (206) 624-7150, mrecines@golfinmexico.net · Diego Castellanos, diego@golfinmexico.net · Chuck Kinder, (949) 494-8561.</p>
+  <p>Flight figures are February typical ranges from public fare data as of September 2026, not live quotes for these dates. Package prices are from the quote and were stated as effective until 26 July 2026.</p>
 </footer>
 
-<script>
-// ---- destination tabs ----
-document.querySelectorAll('.tab:not(.otab)').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    document.querySelectorAll('.tab:not(.otab)').forEach(function(b){ b.setAttribute('aria-selected','false'); });
-    document.querySelectorAll('.panel').forEach(function(p){ p.hidden = true; });
-    btn.setAttribute('aria-selected','true');
-    document.getElementById(btn.dataset.panel).hidden = false;
-  });
-});
-
-// ---- departure-city tabs ----
-document.querySelectorAll('.otab').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    document.querySelectorAll('.otab').forEach(function(b){ b.setAttribute('aria-selected','false'); });
-    document.querySelectorAll('.opanel').forEach(function(p){ p.hidden = true; });
-    btn.setAttribute('aria-selected','true');
-    document.getElementById(btn.dataset.panel).hidden = false;
-  });
-});
-
-// ---- cost calculator ----
-var pkg = document.getElementById('pkg'),
-    org = document.getElementById('org'),
-    grp = document.getElementById('grp'),
-    spend = document.getElementById('spend'),
-    cad = document.getElementById('cad'),
-    chart = document.getElementById('chart'),
-    ins = document.getElementById('ins'),
-    ccad = document.getElementById('ccad'),
-    body = document.getElementById('calcBody');
-
-var NIGHTS = 5, CHARTER = 1600, FX = 1.4016;
-
-// February average return fares. Canadian origins quoted in CAD, Houston in USD.
-// `note` flags the airport actually used where it differs from the obvious one.
-var FARES = {
-  yyc: {label:'YYC', cur:'CAD', cun:828, pvr:897, dr:1538, cr:703, drNote:'via PUJ, +2h drive'},
-  yyz: {label:'YYZ', cur:'CAD', cun:736, pvr:725, dr:750,  cr:680, drNote:'via LRM, 10 min away'},
-  iah: {label:'IAH', cur:'USD', cun:338, pvr:290, dr:480,  cr:420, drNote:'via PUJ, +2h drive'}
-};
-
-function render(){
-  var parts = pkg.value.split('|');
-  var dest   = parts[0];                        // cun | pvr | dr | cr
-  var land   = parseFloat(parts[1]);            // USD, as quoted
-  var caddie = parseFloat(parts[2]);            // USD
-  var n = parseInt(grp.value, 10);
-  var perDay = parseFloat(spend.value);
-
-  var o = FARES[org.value];
-  var fareNative = o[dest];                     // in that origin's home currency
-  var flight = o.cur === 'CAD' ? fareNative / FX : fareNative;   // normalise to USD
-
-  var toCad = ccad.checked;
-  var cur = toCad ? 'CAD' : 'USD';
-  function money(usd){
-    return (toCad ? 'C$' : '$') + Math.round(toCad ? usd * FX : usd).toLocaleString('en-US');
-  }
-
-  var sym = o.cur === 'CAD' ? 'C$' : '$';
-  var fareLabel = 'Return airfare from ' + o.label + ' &mdash; Feb avg (' +
-                  sym + fareNative.toLocaleString('en-US') + ')' +
-                  (dest === 'dr' ? ' <span style="color:var(--ink-3)">' + o.drNote + '</span>' : '');
-
-  var rows = [
-    ['Land package (quoted)', land],
-    [fareLabel, flight]
-  ];
-  if (cad.checked && caddie > 0) rows.push(['Caddie fees &amp; tips (required)', caddie]);
-  if (chart.checked) rows.push(['Group charter, split ' + n + ' ways', CHARTER / n]);
-  if (ins.checked) rows.push(['Trip insurance (~7% of package)', land * 0.07]);
-  if (perDay > 0) rows.push(['Personal spend, ' + NIGHTS + ' days', perDay * NIGHTS]);
-
-  var total = rows.reduce(function(s, r){ return s + r[1]; }, 0);
-
-  var html = rows.map(function(r){
-    return '<tr><td>' + r[0] + '</td><td style="text-align:right">' + money(r[1]) +
-           '</td><td style="text-align:right;color:var(--ink-3)">' + money(r[1] * n) + '</td></tr>';
-  }).join('');
-
-  html += '<tr style="background:var(--panel-2)"><td><b>Landed cost</b></td>' +
-          '<td style="text-align:right"><b class="price">' + money(total) + '</b></td>' +
-          '<td style="text-align:right"><b class="price">' + money(total * n) + '</b></td></tr>';
-
-  body.innerHTML = html;
-  document.getElementById('hdPer').textContent = 'Per golfer (' + cur + ')';
-  document.getElementById('grpOut').textContent = n;
-  document.getElementById('spendOut').textContent = '$' + perDay;
-}
-
-[pkg, org, grp, spend, cad, chart, ins, ccad].forEach(function(el){
-  el.addEventListener('input', render);
-  el.addEventListener('change', render);
-});
-render();
-
-// ---- page view counter ----
-// Free public counter (Abacus). No account, no cookies, no per-visitor data.
-// Counts once per browser session; refreshes just read the current total.
-// If it is blocked or the service is down the badge stays hidden — never shows an error.
-(function(){
-  var box = document.getElementById('viewCounter'),
-      out = document.getElementById('viewCount');
-  if (!box || !out || typeof fetch !== 'function') return;
-
-  var BASE = 'https://abacus.jasoncameron.dev/',
-      NS   = 'jasmah-golf-trip-27',
-      KEY  = 'site-views',
-      MARK = 'gt27-counted';
-
-  function seen(){ try { return sessionStorage.getItem(MARK) === '1'; } catch(e){ return false; } }
-  function mark(){ try { sessionStorage.setItem(MARK, '1'); } catch(e){} }
-
-  function show(n){
-    out.textContent = n.toLocaleString('en-US');
-    box.hidden = false;
-  }
-
-  function ask(verb){
-    return fetch(BASE + verb + '/' + NS + '/' + KEY, {cache:'no-store'})
-      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function(d){
-        if (typeof d.value !== 'number') throw new Error('bad payload');
-        return d.value;
-      });
-  }
-
-  if (seen()) {
-    // already counted this session — just read the total, and if the key
-    // somehow isn't there yet, fall back to counting.
-    ask('get').then(show).catch(function(){
-      ask('hit').then(function(n){ mark(); show(n); }).catch(function(){});
-    });
-  } else {
-    ask('hit').then(function(n){ mark(); show(n); }).catch(function(){});
-  }
-})();
-</script>
-
+</div>
 </body>
 </html>
